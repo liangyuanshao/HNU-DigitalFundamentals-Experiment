@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity mux_n is
+	generic(n: integer := 3);
+	port(s: in std_logic_vector(n-1 downto 0);
+		en: in std_logic_vector(n-1 downto 0);
+		y: out std_logic;
+end mux_n;
+
+architecture main of mux_n is
+component three_state_gate 
+	port(in0, en0: in std_logic;
+		out0: out std_logic);
+end component;
+
+begin
+	sel: for i in n-1 downto 0 generate
+		gi: three_state_gate port map(s(i), en(i), y);
+	end generate;
+end main;

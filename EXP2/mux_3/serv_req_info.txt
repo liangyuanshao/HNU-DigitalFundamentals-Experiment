@@ -1,0 +1,32 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x01a90dc2: RESR_TMW + 0x20dc2 (??1TMW_WND@@UAE@XZ + 0x832)
+	0x6244ba48: mfc90 + 0x5ba48
+	0x6244a63c: mfc90 + 0x5a63c
+	0x6244a8c8: mfc90 + 0x5a8c8
+	0x624485b2: mfc90 + 0x585b2
+	0x776abf1a: USER32 + 0x3bf1a (AddClipboardFormatListener + 0x49a)
+	0x776a83e9: USER32 + 0x383e9 (DispatchMessageW + 0x979)
+	0x776a7c9d: USER32 + 0x37c9d (DispatchMessageW + 0x22d)
+	0x7769cdcf: USER32 + 0x2cdcf (DispatchMessageA + 0xf)
+	0x6248a866: mfc90 + 0x9a866
+	0x00fe1968: ccl_thr + 0x1968 (thr_thread_var_destroy + 0x28)
+	0x624571e7: mfc90 + 0x671e7
+	0x0044f42e: quartus + 0x4f42e (Pjm_Uninit + 0x401ee)
+	0x775a8483: KERNEL32 + 0x18483 (BaseThreadInitThunk + 0x23)
+	0x77a6302b: ntdll + 0x6302b (RtlValidSecurityDescriptor + 0x11b)
+	0x77a62ff9: ntdll + 0x62ff9 (RtlValidSecurityDescriptor + 0xe9)
+	0xffffffffffffffff:
+	</callstack>
+	<error>Current editor: STED, GED, RPW, STED, STED</error>
+	<date>Tue Dec 11 18:09:23 2018</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X01A90DC2
+Current editor: STED, GED, RPW, STED, STED
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+

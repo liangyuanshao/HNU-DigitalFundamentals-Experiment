@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity decoder_ins is
+	port(i0, i1: in std_logic_vector(3 downto 0);
+		e: in std_logic;
+		move_r1_r2, move_m_r2, move_r1_m, add_r1_r2, sub_r1_r2, and_r1_r2, not_r1, shr_r1, shl_r1,
+		jmp_add, jz_add, jc_add, in_r1, out_r1, nop,halt: out std_logic);
+end decoder_ins;
+
+architecture main of decoder_ins is
+signal s:std_logic_vector(3 downto 0);
+signal r1, r2: std_logic_vector(1 downto 0);
+begin
+	process(i0, i1, e)
+	begin
+		move_r1_r2 <= '0'; move_m_r2 <= '0'; move_r1_m <= '0'; add_r1_r2 <= '0'; sub_r1_r2 <= '0';
+		and_r1_r2 <= '0'; not_r1 <= '0'; shr_r1 <= '0'; shl_r1 <= '0'; jmp_add <= '0';
+		jz_add <= '0'; jc_add <= '0'; in_r1 <= '0'; out_r1 <= '0'; nop <= '0'; halt <= '0';
+		s <= i0; r1 <= i1(3 downto 2); r2 <= i1(1 downto 0);
+		if(e = '1') then
+			if(s = "0011") then
+				if(r1 = "11") then move_m_r2 <= '1';
+				elsif(r2 = "11") then move_r1_m <= '1';
+				else move_r1_r2 <= '1';
+				end if;
+			elsif(s = "1001") then add_r1_r2<= '1';
+			elsif(s = "0110") then sub_r1_r2 <= '1';
+			elsif(s = "1110") then and_r1_r2 <= '1';
+			elsif(s = "0101") then not_r1 <= '1';
+			elsif(s = "1010") then
+				if(r2 = "00") then shr_r1 <= '1';
+				elsif(r2 = "11") then shl_r1 <= '1';
+				end if;
+			elsif(s = "0001") then
+				if(r2 = "00") then jmp_add <= '1';
+				elsif(r2 = "01") then jz_add <= '1';
+				elsif(r2 = "10") then jc_add <= '1';
+				end if;
+			elsif(s = "0010") then in_r1 <= '1';
+			elsif(s = "0100") then out_r1 <= '1';
+			elsif(s = "0111") then nop <= '1';
+			elsif(s = "1000") then halt <= '1';
+			end if;
+		end if;
+	end process;
+end main;
+	

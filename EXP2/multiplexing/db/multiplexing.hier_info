@@ -1,0 +1,20 @@
+|multiplexing
+s => three_state_gate:g0.in1
+s => three_state_gate:g1.in1
+i[0] => three_state_gate:g1.en
+i[1] => three_state_gate:g0.en
+y <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplexing|three_state_gate:g0
+en => out1~0.OE
+in1 => out1~0.DATAIN
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|multiplexing|three_state_gate:g1
+en => out1~0.OE
+in1 => out1~0.DATAIN
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

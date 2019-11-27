@@ -1,0 +1,30 @@
+|full_adder
+x => half_adder:g0.x
+y => half_adder:g0.y
+z => half_adder:g1.y
+s <= half_adder:g1.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|half_adder:g0
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder|half_adder:g1
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

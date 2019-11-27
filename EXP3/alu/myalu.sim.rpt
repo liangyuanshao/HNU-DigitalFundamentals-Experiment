@@ -1,0 +1,246 @@
+Simulator report for myalu
+Sat Dec 08 13:28:45 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 89 nodes     ;
+; Simulation Coverage         ;      98.85 % ;
+; Total Number of Transitions ; 3550         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      98.85 % ;
+; Total nodes checked                                 ; 89           ;
+; Total output ports checked                          ; 87           ;
+; Total output ports with complete 1/0-value coverage ; 86           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |myalu|r1_out[1]~0     ; |myalu|r1_out[1]~0     ; out              ;
+; |myalu|r1_out[1]~1     ; |myalu|r1_out[1]~1     ; out              ;
+; |myalu|r1_out[1]~2     ; |myalu|r1_out[1]~2     ; out              ;
+; |myalu|r1_out[1]~3     ; |myalu|r1_out[1]~3     ; out              ;
+; |myalu|r1_out[1]$latch ; |myalu|r1_out[1]$latch ; out              ;
+; |myalu|r1_out[0]~4     ; |myalu|r1_out[0]~4     ; out              ;
+; |myalu|r1_out[0]~5     ; |myalu|r1_out[0]~5     ; out              ;
+; |myalu|r1_out~25       ; |myalu|r1_out~25       ; out0             ;
+; |myalu|r1_out~26       ; |myalu|r1_out~26       ; out0             ;
+; |myalu|r1_out~27       ; |myalu|r1_out~27       ; out0             ;
+; |myalu|r1_out~28       ; |myalu|r1_out~28       ; out0             ;
+; |myalu|r1_out[0]~6     ; |myalu|r1_out[0]~6     ; out              ;
+; |myalu|r1_out[0]~7     ; |myalu|r1_out[0]~7     ; out              ;
+; |myalu|process_0~0     ; |myalu|process_0~0     ; out0             ;
+; |myalu|r1_out[0]~8     ; |myalu|r1_out[0]~8     ; out              ;
+; |myalu|process_0~1     ; |myalu|process_0~1     ; out0             ;
+; |myalu|r1_out[0]$latch ; |myalu|r1_out[0]$latch ; out              ;
+; |myalu|r1_out[3]~9     ; |myalu|r1_out[3]~9     ; out              ;
+; |myalu|r1_out[2]~10    ; |myalu|r1_out[2]~10    ; out              ;
+; |myalu|r1_out[1]~11    ; |myalu|r1_out[1]~11    ; out              ;
+; |myalu|r1_out[3]~12    ; |myalu|r1_out[3]~12    ; out0             ;
+; |myalu|r1_out[2]$latch ; |myalu|r1_out[2]$latch ; out              ;
+; |myalu|r1_out[2]~13    ; |myalu|r1_out[2]~13    ; out              ;
+; |myalu|r1_out[2]~14    ; |myalu|r1_out[2]~14    ; out              ;
+; |myalu|r1_out[2]~15    ; |myalu|r1_out[2]~15    ; out              ;
+; |myalu|r1_out[2]~16    ; |myalu|r1_out[2]~16    ; out              ;
+; |myalu|r1_out[3]$latch ; |myalu|r1_out[3]$latch ; out              ;
+; |myalu|r1_out[3]~17    ; |myalu|r1_out[3]~17    ; out              ;
+; |myalu|r1_out[3]~18    ; |myalu|r1_out[3]~18    ; out0             ;
+; |myalu|r1_out[3]~19    ; |myalu|r1_out[3]~19    ; out              ;
+; |myalu|r1_out[3]~20    ; |myalu|r1_out[3]~20    ; out0             ;
+; |myalu|r1_out[3]~21    ; |myalu|r1_out[3]~21    ; out              ;
+; |myalu|r1_out[3]~22    ; |myalu|r1_out[3]~22    ; out0             ;
+; |myalu|r1_out[3]~23    ; |myalu|r1_out[3]~23    ; out              ;
+; |myalu|r1_out[3]~24    ; |myalu|r1_out[3]~24    ; out0             ;
+; |myalu|r1_in[0]        ; |myalu|r1_in[0]        ; out              ;
+; |myalu|r1_in[1]        ; |myalu|r1_in[1]        ; out              ;
+; |myalu|r1_in[2]        ; |myalu|r1_in[2]        ; out              ;
+; |myalu|r1_in[3]        ; |myalu|r1_in[3]        ; out              ;
+; |myalu|r2_in[0]        ; |myalu|r2_in[0]        ; out              ;
+; |myalu|r2_in[1]        ; |myalu|r2_in[1]        ; out              ;
+; |myalu|r2_in[2]        ; |myalu|r2_in[2]        ; out              ;
+; |myalu|r2_in[3]        ; |myalu|r2_in[3]        ; out              ;
+; |myalu|s[0]            ; |myalu|s[0]            ; out              ;
+; |myalu|s[1]            ; |myalu|s[1]            ; out              ;
+; |myalu|s[4]            ; |myalu|s[4]            ; out              ;
+; |myalu|s[5]            ; |myalu|s[5]            ; out              ;
+; |myalu|s[6]            ; |myalu|s[6]            ; out              ;
+; |myalu|s[7]            ; |myalu|s[7]            ; out              ;
+; |myalu|r1_out[0]       ; |myalu|r1_out[0]       ; pin_out          ;
+; |myalu|r1_out[1]       ; |myalu|r1_out[1]       ; pin_out          ;
+; |myalu|r1_out[2]       ; |myalu|r1_out[2]       ; pin_out          ;
+; |myalu|r1_out[3]       ; |myalu|r1_out[3]       ; pin_out          ;
+; |myalu|Add0~0          ; |myalu|Add0~0          ; out0             ;
+; |myalu|Add0~1          ; |myalu|Add0~1          ; out0             ;
+; |myalu|Add0~2          ; |myalu|Add0~2          ; out0             ;
+; |myalu|Add0~3          ; |myalu|Add0~3          ; out0             ;
+; |myalu|Add0~4          ; |myalu|Add0~4          ; out0             ;
+; |myalu|Add0~5          ; |myalu|Add0~5          ; out0             ;
+; |myalu|Add0~6          ; |myalu|Add0~6          ; out0             ;
+; |myalu|Add0~7          ; |myalu|Add0~7          ; out0             ;
+; |myalu|Add0~8          ; |myalu|Add0~8          ; out0             ;
+; |myalu|Add0~9          ; |myalu|Add0~9          ; out0             ;
+; |myalu|Add0~10         ; |myalu|Add0~10         ; out0             ;
+; |myalu|Add0~11         ; |myalu|Add0~11         ; out0             ;
+; |myalu|Add0~12         ; |myalu|Add0~12         ; out0             ;
+; |myalu|Add1~0          ; |myalu|Add1~0          ; out0             ;
+; |myalu|Add1~1          ; |myalu|Add1~1          ; out0             ;
+; |myalu|Add1~2          ; |myalu|Add1~2          ; out0             ;
+; |myalu|Add1~3          ; |myalu|Add1~3          ; out0             ;
+; |myalu|Add1~4          ; |myalu|Add1~4          ; out0             ;
+; |myalu|Add1~5          ; |myalu|Add1~5          ; out0             ;
+; |myalu|Add1~6          ; |myalu|Add1~6          ; out0             ;
+; |myalu|Add1~7          ; |myalu|Add1~7          ; out0             ;
+; |myalu|Add1~8          ; |myalu|Add1~8          ; out0             ;
+; |myalu|Add1~9          ; |myalu|Add1~9          ; out0             ;
+; |myalu|Add1~10         ; |myalu|Add1~10         ; out0             ;
+; |myalu|Add1~11         ; |myalu|Add1~11         ; out0             ;
+; |myalu|Add1~12         ; |myalu|Add1~12         ; out0             ;
+; |myalu|Add1~13         ; |myalu|Add1~13         ; out0             ;
+; |myalu|Equal1~0        ; |myalu|Equal1~0        ; out0             ;
+; |myalu|Equal2~0        ; |myalu|Equal2~0        ; out0             ;
+; |myalu|Equal3~0        ; |myalu|Equal3~0        ; out0             ;
+; |myalu|Equal4~0        ; |myalu|Equal4~0        ; out0             ;
+; |myalu|Equal5~0        ; |myalu|Equal5~0        ; out0             ;
+; |myalu|Equal6~0        ; |myalu|Equal6~0        ; out0             ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------+
+; Missing 1-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |myalu|Equal0~0 ; |myalu|Equal0~0  ; out0             ;
++-----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Dec 08 13:28:45 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off myalu -c myalu
+Info: Using vector source file "D:/CODES/Quartus/experiment/exp3/alu/myalu.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      98.85 %
+Info: Number of transitions in simulation is 3550
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 178 megabytes
+    Info: Processing ended: Sat Dec 08 13:28:45 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,91 @@
+|IR
+ld => mydff:ge:0:gi.en
+ld => mydff:ge:1:gi.en
+ld => mydff:ge:2:gi.en
+ld => mydff:ge:3:gi.en
+ld => mydff:ge:4:gi.en
+ld => mydff:ge:5:gi.en
+ld => mydff:ge:6:gi.en
+ld => mydff:ge:7:gi.en
+clk => mydff:ge:0:gi.c
+clk => mydff:ge:1:gi.c
+clk => mydff:ge:2:gi.c
+clk => mydff:ge:3:gi.c
+clk => mydff:ge:4:gi.c
+clk => mydff:ge:5:gi.c
+clk => mydff:ge:6:gi.c
+clk => mydff:ge:7:gi.c
+a[0] => mydff:ge:0:gi.d
+a[1] => mydff:ge:1:gi.d
+a[2] => mydff:ge:2:gi.d
+a[3] => mydff:ge:3:gi.d
+a[4] => mydff:ge:4:gi.d
+a[5] => mydff:ge:5:gi.d
+a[6] => mydff:ge:6:gi.d
+a[7] => mydff:ge:7:gi.d
+x[0] <= mydff:ge:0:gi.q
+x[1] <= mydff:ge:1:gi.q
+x[2] <= mydff:ge:2:gi.q
+x[3] <= mydff:ge:3:gi.q
+x[4] <= mydff:ge:4:gi.q
+x[5] <= mydff:ge:5:gi.q
+x[6] <= mydff:ge:6:gi.q
+x[7] <= mydff:ge:7:gi.q
+
+
+|IR|mydff:\ge:7:gi
+d => q~reg0.DATAIN
+en => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IR|mydff:\ge:6:gi
+d => q~reg0.DATAIN
+en => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IR|mydff:\ge:5:gi
+d => q~reg0.DATAIN
+en => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IR|mydff:\ge:4:gi
+d => q~reg0.DATAIN
+en => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IR|mydff:\ge:3:gi
+d => q~reg0.DATAIN
+en => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IR|mydff:\ge:2:gi
+d => q~reg0.DATAIN
+en => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IR|mydff:\ge:1:gi
+d => q~reg0.DATAIN
+en => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|IR|mydff:\ge:0:gi
+d => q~reg0.DATAIN
+en => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Sat Dec 01 15:10:20 2018
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : serial_adder
+Top-level Entity Name : serial_adder
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 3
+    Dedicated logic registers : 11
+Total registers : 11
+Total pins : 12
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

@@ -1,0 +1,31 @@
+|PC
+inpc => process_0~0.IN0
+inpc => process_0~1.IN0
+ldpc => process_0~1.IN1
+ldpc => process_0~0.IN1
+clk => pc_add[7].CLK
+clk => pc_add[6].CLK
+clk => pc_add[5].CLK
+clk => pc_add[4].CLK
+clk => pc_add[3].CLK
+clk => pc_add[2].CLK
+clk => pc_add[1].CLK
+clk => pc_add[0].CLK
+a[0] => pc_add~7.DATAB
+a[1] => pc_add~6.DATAB
+a[2] => pc_add~5.DATAB
+a[3] => pc_add~4.DATAB
+a[4] => pc_add~3.DATAB
+a[5] => pc_add~2.DATAB
+a[6] => pc_add~1.DATAB
+a[7] => pc_add~0.DATAB
+c[0] <= pc_add[0].DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= pc_add[1].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= pc_add[2].DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= pc_add[3].DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= pc_add[4].DB_MAX_OUTPUT_PORT_TYPE
+c[5] <= pc_add[5].DB_MAX_OUTPUT_PORT_TYPE
+c[6] <= pc_add[6].DB_MAX_OUTPUT_PORT_TYPE
+c[7] <= pc_add[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

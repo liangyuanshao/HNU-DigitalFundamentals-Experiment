@@ -1,0 +1,122 @@
+|mux_3
+s0[0] => three_state_gate:g0.in0[0]
+s0[1] => three_state_gate:g0.in0[1]
+s0[2] => three_state_gate:g0.in0[2]
+s0[3] => three_state_gate:g0.in0[3]
+s0[4] => three_state_gate:g0.in0[4]
+s0[5] => three_state_gate:g0.in0[5]
+s0[6] => three_state_gate:g0.in0[6]
+s0[7] => three_state_gate:g0.in0[7]
+s1[0] => three_state_gate:g1.in0[0]
+s1[1] => three_state_gate:g1.in0[1]
+s1[2] => three_state_gate:g1.in0[2]
+s1[3] => three_state_gate:g1.in0[3]
+s1[4] => three_state_gate:g1.in0[4]
+s1[5] => three_state_gate:g1.in0[5]
+s1[6] => three_state_gate:g1.in0[6]
+s1[7] => three_state_gate:g1.in0[7]
+s2[0] => three_state_gate:g2.in0[0]
+s2[1] => three_state_gate:g2.in0[1]
+s2[2] => three_state_gate:g2.in0[2]
+s2[3] => three_state_gate:g2.in0[3]
+s2[4] => three_state_gate:g2.in0[4]
+s2[5] => three_state_gate:g2.in0[5]
+s2[6] => three_state_gate:g2.in0[6]
+s2[7] => three_state_gate:g2.in0[7]
+en[0] => Equal0.IN0
+en[0] => Equal1.IN1
+en[0] => Equal2.IN0
+en[1] => Equal0.IN1
+en[1] => Equal1.IN0
+en[1] => Equal2.IN1
+y[0] <= y[0]~7.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]~6.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]~5.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y[4]~3.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y[5]~2.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y[6]~1.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y[7]~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_3|three_state_gate:g0
+in0[0] => out0[0]~0.DATAIN
+in0[1] => out0[1]~1.DATAIN
+in0[2] => out0[2]~2.DATAIN
+in0[3] => out0[3]~3.DATAIN
+in0[4] => out0[4]~4.DATAIN
+in0[5] => out0[5]~5.DATAIN
+in0[6] => out0[6]~6.DATAIN
+in0[7] => out0[7]~7.DATAIN
+en0 => out0[7]~7.OE
+en0 => out0[6]~6.OE
+en0 => out0[5]~5.OE
+en0 => out0[4]~4.OE
+en0 => out0[3]~3.OE
+en0 => out0[2]~2.OE
+en0 => out0[1]~1.OE
+en0 => out0[0]~0.OE
+out0[0] <= out0[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= out0[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= out0[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= out0[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+out0[4] <= out0[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+out0[5] <= out0[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+out0[6] <= out0[6]~6.DB_MAX_OUTPUT_PORT_TYPE
+out0[7] <= out0[7]~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_3|three_state_gate:g1
+in0[0] => out0[0]~0.DATAIN
+in0[1] => out0[1]~1.DATAIN
+in0[2] => out0[2]~2.DATAIN
+in0[3] => out0[3]~3.DATAIN
+in0[4] => out0[4]~4.DATAIN
+in0[5] => out0[5]~5.DATAIN
+in0[6] => out0[6]~6.DATAIN
+in0[7] => out0[7]~7.DATAIN
+en0 => out0[7]~7.OE
+en0 => out0[6]~6.OE
+en0 => out0[5]~5.OE
+en0 => out0[4]~4.OE
+en0 => out0[3]~3.OE
+en0 => out0[2]~2.OE
+en0 => out0[1]~1.OE
+en0 => out0[0]~0.OE
+out0[0] <= out0[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= out0[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= out0[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= out0[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+out0[4] <= out0[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+out0[5] <= out0[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+out0[6] <= out0[6]~6.DB_MAX_OUTPUT_PORT_TYPE
+out0[7] <= out0[7]~7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_3|three_state_gate:g2
+in0[0] => out0[0]~0.DATAIN
+in0[1] => out0[1]~1.DATAIN
+in0[2] => out0[2]~2.DATAIN
+in0[3] => out0[3]~3.DATAIN
+in0[4] => out0[4]~4.DATAIN
+in0[5] => out0[5]~5.DATAIN
+in0[6] => out0[6]~6.DATAIN
+in0[7] => out0[7]~7.DATAIN
+en0 => out0[7]~7.OE
+en0 => out0[6]~6.OE
+en0 => out0[5]~5.OE
+en0 => out0[4]~4.OE
+en0 => out0[3]~3.OE
+en0 => out0[2]~2.OE
+en0 => out0[1]~1.OE
+en0 => out0[0]~0.OE
+out0[0] <= out0[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+out0[1] <= out0[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+out0[2] <= out0[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+out0[3] <= out0[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+out0[4] <= out0[4]~4.DB_MAX_OUTPUT_PORT_TYPE
+out0[5] <= out0[5]~5.DB_MAX_OUTPUT_PORT_TYPE
+out0[6] <= out0[6]~6.DB_MAX_OUTPUT_PORT_TYPE
+out0[7] <= out0[7]~7.DB_MAX_OUTPUT_PORT_TYPE
+
+

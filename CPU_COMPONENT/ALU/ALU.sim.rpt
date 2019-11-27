@@ -1,0 +1,425 @@
+Simulator report for ALU
+Thu Dec 27 18:28:18 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 252 nodes    ;
+; Simulation Coverage         ;      91.67 % ;
+; Total Number of Transitions ; 6368         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      91.67 % ;
+; Total nodes checked                                 ; 252          ;
+; Total output ports checked                          ; 252          ;
+; Total output ports with complete 1/0-value coverage ; 231          ;
+; Total output ports with no 1/0-value coverage       ; 4            ;
+; Total output ports with no 1-value coverage         ; 19           ;
+; Total output ports with no 0-value coverage         ; 6            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |ALU|process_0~0   ; |ALU|process_0~0   ; out0             ;
+; |ALU|ALU_TMP[1]    ; |ALU|ALU_TMP[1]    ; out              ;
+; |ALU|ALU_TMP[0]~0  ; |ALU|ALU_TMP[0]~0  ; out              ;
+; |ALU|ALU_TMP[0]~1  ; |ALU|ALU_TMP[0]~1  ; out              ;
+; |ALU|ALU_TMP[0]~2  ; |ALU|ALU_TMP[0]~2  ; out              ;
+; |ALU|ALU_TMP~40    ; |ALU|ALU_TMP~40    ; out0             ;
+; |ALU|ALU_TMP~41    ; |ALU|ALU_TMP~41    ; out0             ;
+; |ALU|ALU_TMP~42    ; |ALU|ALU_TMP~42    ; out0             ;
+; |ALU|ALU_TMP~43    ; |ALU|ALU_TMP~43    ; out0             ;
+; |ALU|ALU_TMP~44    ; |ALU|ALU_TMP~44    ; out0             ;
+; |ALU|ALU_TMP~45    ; |ALU|ALU_TMP~45    ; out0             ;
+; |ALU|ALU_TMP~46    ; |ALU|ALU_TMP~46    ; out0             ;
+; |ALU|ALU_TMP~47    ; |ALU|ALU_TMP~47    ; out0             ;
+; |ALU|ALU_TMP[0]~3  ; |ALU|ALU_TMP[0]~3  ; out              ;
+; |ALU|ALU_OUT[0]~0  ; |ALU|ALU_OUT[0]~0  ; out              ;
+; |ALU|C_EN~0        ; |ALU|C_EN~0        ; out              ;
+; |ALU|C~0           ; |ALU|C~0           ; out              ;
+; |ALU|C~1           ; |ALU|C~1           ; out              ;
+; |ALU|process_0~1   ; |ALU|process_0~1   ; out0             ;
+; |ALU|C_EN~4        ; |ALU|C_EN~4        ; out              ;
+; |ALU|C_EN~5        ; |ALU|C_EN~5        ; out              ;
+; |ALU|C~6           ; |ALU|C~6           ; out              ;
+; |ALU|C~7           ; |ALU|C~7           ; out              ;
+; |ALU|ALU_OUT[6]~2  ; |ALU|ALU_OUT[6]~2  ; out              ;
+; |ALU|ALU_OUT[5]~3  ; |ALU|ALU_OUT[5]~3  ; out              ;
+; |ALU|ALU_OUT[4]~4  ; |ALU|ALU_OUT[4]~4  ; out              ;
+; |ALU|ALU_OUT[3]~5  ; |ALU|ALU_OUT[3]~5  ; out              ;
+; |ALU|ALU_OUT[2]~6  ; |ALU|ALU_OUT[2]~6  ; out              ;
+; |ALU|ALU_OUT[1]~7  ; |ALU|ALU_OUT[1]~7  ; out              ;
+; |ALU|ALU_TMP[8]~5  ; |ALU|ALU_TMP[8]~5  ; out              ;
+; |ALU|ALU_TMP[7]~6  ; |ALU|ALU_TMP[7]~6  ; out              ;
+; |ALU|ALU_TMP[6]~7  ; |ALU|ALU_TMP[6]~7  ; out              ;
+; |ALU|ALU_TMP[5]~8  ; |ALU|ALU_TMP[5]~8  ; out              ;
+; |ALU|ALU_TMP[4]~9  ; |ALU|ALU_TMP[4]~9  ; out              ;
+; |ALU|ALU_TMP[3]~10 ; |ALU|ALU_TMP[3]~10 ; out              ;
+; |ALU|ALU_TMP[2]~11 ; |ALU|ALU_TMP[2]~11 ; out              ;
+; |ALU|ALU_TMP[1]~12 ; |ALU|ALU_TMP[1]~12 ; out              ;
+; |ALU|ALU_TMP[1]~13 ; |ALU|ALU_TMP[1]~13 ; out              ;
+; |ALU|ALU_TMP[1]~14 ; |ALU|ALU_TMP[1]~14 ; out0             ;
+; |ALU|ALU_TMP[1]~15 ; |ALU|ALU_TMP[1]~15 ; out              ;
+; |ALU|ALU_TMP[1]~16 ; |ALU|ALU_TMP[1]~16 ; out0             ;
+; |ALU|ALU_TMP[1]~17 ; |ALU|ALU_TMP[1]~17 ; out              ;
+; |ALU|ALU_TMP[1]~18 ; |ALU|ALU_TMP[1]~18 ; out0             ;
+; |ALU|ALU_TMP[1]~19 ; |ALU|ALU_TMP[1]~19 ; out              ;
+; |ALU|ALU_TMP[2]    ; |ALU|ALU_TMP[2]    ; out              ;
+; |ALU|ALU_TMP[2]~20 ; |ALU|ALU_TMP[2]~20 ; out              ;
+; |ALU|ALU_TMP[2]~21 ; |ALU|ALU_TMP[2]~21 ; out              ;
+; |ALU|ALU_TMP[2]~22 ; |ALU|ALU_TMP[2]~22 ; out              ;
+; |ALU|ALU_TMP[3]    ; |ALU|ALU_TMP[3]    ; out              ;
+; |ALU|ALU_TMP[3]~23 ; |ALU|ALU_TMP[3]~23 ; out              ;
+; |ALU|ALU_TMP[3]~24 ; |ALU|ALU_TMP[3]~24 ; out              ;
+; |ALU|ALU_TMP[3]~25 ; |ALU|ALU_TMP[3]~25 ; out              ;
+; |ALU|ALU_TMP[4]    ; |ALU|ALU_TMP[4]    ; out              ;
+; |ALU|ALU_TMP[4]~26 ; |ALU|ALU_TMP[4]~26 ; out              ;
+; |ALU|ALU_TMP[4]~27 ; |ALU|ALU_TMP[4]~27 ; out              ;
+; |ALU|ALU_TMP[4]~28 ; |ALU|ALU_TMP[4]~28 ; out              ;
+; |ALU|ALU_TMP[5]    ; |ALU|ALU_TMP[5]    ; out              ;
+; |ALU|ALU_TMP[5]~29 ; |ALU|ALU_TMP[5]~29 ; out              ;
+; |ALU|ALU_TMP[5]~30 ; |ALU|ALU_TMP[5]~30 ; out              ;
+; |ALU|ALU_TMP[5]~31 ; |ALU|ALU_TMP[5]~31 ; out              ;
+; |ALU|ALU_TMP[6]    ; |ALU|ALU_TMP[6]    ; out              ;
+; |ALU|ALU_TMP[6]~32 ; |ALU|ALU_TMP[6]~32 ; out              ;
+; |ALU|ALU_TMP[6]~33 ; |ALU|ALU_TMP[6]~33 ; out              ;
+; |ALU|ALU_TMP[6]~34 ; |ALU|ALU_TMP[6]~34 ; out              ;
+; |ALU|ALU_TMP[7]    ; |ALU|ALU_TMP[7]    ; out              ;
+; |ALU|ALU_TMP[7]~35 ; |ALU|ALU_TMP[7]~35 ; out              ;
+; |ALU|ALU_TMP[7]~36 ; |ALU|ALU_TMP[7]~36 ; out              ;
+; |ALU|ALU_TMP[7]~37 ; |ALU|ALU_TMP[7]~37 ; out              ;
+; |ALU|ALU_TMP[8]~38 ; |ALU|ALU_TMP[8]~38 ; out              ;
+; |ALU|ALU_TMP[8]~39 ; |ALU|ALU_TMP[8]~39 ; out              ;
+; |ALU|ALU_OUT[0]~10 ; |ALU|ALU_OUT[0]~10 ; out              ;
+; |ALU|ALU_OUT[0]~11 ; |ALU|ALU_OUT[0]~11 ; out              ;
+; |ALU|ALU_OUT[1]~12 ; |ALU|ALU_OUT[1]~12 ; out              ;
+; |ALU|ALU_OUT[1]~13 ; |ALU|ALU_OUT[1]~13 ; out              ;
+; |ALU|ALU_OUT[2]~14 ; |ALU|ALU_OUT[2]~14 ; out              ;
+; |ALU|ALU_OUT[2]~15 ; |ALU|ALU_OUT[2]~15 ; out              ;
+; |ALU|ALU_OUT[3]~16 ; |ALU|ALU_OUT[3]~16 ; out              ;
+; |ALU|ALU_OUT[3]~17 ; |ALU|ALU_OUT[3]~17 ; out              ;
+; |ALU|ALU_OUT[4]~18 ; |ALU|ALU_OUT[4]~18 ; out              ;
+; |ALU|ALU_OUT[4]~19 ; |ALU|ALU_OUT[4]~19 ; out              ;
+; |ALU|ALU_OUT[5]~20 ; |ALU|ALU_OUT[5]~20 ; out              ;
+; |ALU|ALU_OUT[5]~21 ; |ALU|ALU_OUT[5]~21 ; out              ;
+; |ALU|ALU_OUT[6]~22 ; |ALU|ALU_OUT[6]~22 ; out              ;
+; |ALU|ALU_OUT[6]~23 ; |ALU|ALU_OUT[6]~23 ; out              ;
+; |ALU|ALU_OUT[7]~25 ; |ALU|ALU_OUT[7]~25 ; out0             ;
+; |ALU|ALU_TMP[0]    ; |ALU|ALU_TMP[0]    ; out              ;
+; |ALU|ALU_OUT[7]~26 ; |ALU|ALU_OUT[7]~26 ; out0             ;
+; |ALU|ALU_OUT[7]~27 ; |ALU|ALU_OUT[7]~27 ; out              ;
+; |ALU|ALU_OUT[7]~28 ; |ALU|ALU_OUT[7]~28 ; out0             ;
+; |ALU|ALU_OUT[7]~29 ; |ALU|ALU_OUT[7]~29 ; out              ;
+; |ALU|SM            ; |ALU|SM            ; out              ;
+; |ALU|A[0]          ; |ALU|A[0]          ; out              ;
+; |ALU|A[1]          ; |ALU|A[1]          ; out              ;
+; |ALU|A[2]          ; |ALU|A[2]          ; out              ;
+; |ALU|A[3]          ; |ALU|A[3]          ; out              ;
+; |ALU|A[4]          ; |ALU|A[4]          ; out              ;
+; |ALU|A[5]          ; |ALU|A[5]          ; out              ;
+; |ALU|A[6]          ; |ALU|A[6]          ; out              ;
+; |ALU|A[7]          ; |ALU|A[7]          ; out              ;
+; |ALU|B[0]          ; |ALU|B[0]          ; out              ;
+; |ALU|B[1]          ; |ALU|B[1]          ; out              ;
+; |ALU|B[2]          ; |ALU|B[2]          ; out              ;
+; |ALU|B[3]          ; |ALU|B[3]          ; out              ;
+; |ALU|B[4]          ; |ALU|B[4]          ; out              ;
+; |ALU|B[5]          ; |ALU|B[5]          ; out              ;
+; |ALU|B[6]          ; |ALU|B[6]          ; out              ;
+; |ALU|B[7]          ; |ALU|B[7]          ; out              ;
+; |ALU|S[0]          ; |ALU|S[0]          ; out              ;
+; |ALU|S[1]          ; |ALU|S[1]          ; out              ;
+; |ALU|S[2]          ; |ALU|S[2]          ; out              ;
+; |ALU|S[3]          ; |ALU|S[3]          ; out              ;
+; |ALU|FRR           ; |ALU|FRR           ; out              ;
+; |ALU|ALU_OUT[0]    ; |ALU|ALU_OUT[0]    ; pin_out          ;
+; |ALU|ALU_OUT[1]    ; |ALU|ALU_OUT[1]    ; pin_out          ;
+; |ALU|ALU_OUT[2]    ; |ALU|ALU_OUT[2]    ; pin_out          ;
+; |ALU|ALU_OUT[3]    ; |ALU|ALU_OUT[3]    ; pin_out          ;
+; |ALU|ALU_OUT[4]    ; |ALU|ALU_OUT[4]    ; pin_out          ;
+; |ALU|ALU_OUT[5]    ; |ALU|ALU_OUT[5]    ; pin_out          ;
+; |ALU|ALU_OUT[6]    ; |ALU|ALU_OUT[6]    ; pin_out          ;
+; |ALU|ALU_OUT[7]    ; |ALU|ALU_OUT[7]    ; pin_out          ;
+; |ALU|C_EN          ; |ALU|C_EN          ; pin_out          ;
+; |ALU|Z_EN          ; |ALU|Z_EN          ; pin_out          ;
+; |ALU|C             ; |ALU|C             ; pin_out          ;
+; |ALU|LessThan0~0   ; |ALU|LessThan0~0   ; out0             ;
+; |ALU|LessThan0~1   ; |ALU|LessThan0~1   ; out0             ;
+; |ALU|LessThan0~2   ; |ALU|LessThan0~2   ; out0             ;
+; |ALU|LessThan0~3   ; |ALU|LessThan0~3   ; out0             ;
+; |ALU|LessThan0~4   ; |ALU|LessThan0~4   ; out0             ;
+; |ALU|LessThan0~5   ; |ALU|LessThan0~5   ; out0             ;
+; |ALU|LessThan0~6   ; |ALU|LessThan0~6   ; out0             ;
+; |ALU|LessThan0~7   ; |ALU|LessThan0~7   ; out0             ;
+; |ALU|LessThan0~8   ; |ALU|LessThan0~8   ; out0             ;
+; |ALU|LessThan0~9   ; |ALU|LessThan0~9   ; out0             ;
+; |ALU|LessThan0~10  ; |ALU|LessThan0~10  ; out0             ;
+; |ALU|LessThan0~11  ; |ALU|LessThan0~11  ; out0             ;
+; |ALU|LessThan0~12  ; |ALU|LessThan0~12  ; out0             ;
+; |ALU|LessThan0~13  ; |ALU|LessThan0~13  ; out0             ;
+; |ALU|LessThan0~14  ; |ALU|LessThan0~14  ; out0             ;
+; |ALU|LessThan0~15  ; |ALU|LessThan0~15  ; out0             ;
+; |ALU|LessThan0~16  ; |ALU|LessThan0~16  ; out0             ;
+; |ALU|LessThan0~17  ; |ALU|LessThan0~17  ; out0             ;
+; |ALU|LessThan0~18  ; |ALU|LessThan0~18  ; out0             ;
+; |ALU|LessThan0~19  ; |ALU|LessThan0~19  ; out0             ;
+; |ALU|LessThan0~20  ; |ALU|LessThan0~20  ; out0             ;
+; |ALU|LessThan0~21  ; |ALU|LessThan0~21  ; out0             ;
+; |ALU|LessThan0~22  ; |ALU|LessThan0~22  ; out0             ;
+; |ALU|LessThan0~23  ; |ALU|LessThan0~23  ; out0             ;
+; |ALU|LessThan0~24  ; |ALU|LessThan0~24  ; out0             ;
+; |ALU|LessThan0~25  ; |ALU|LessThan0~25  ; out0             ;
+; |ALU|LessThan0~26  ; |ALU|LessThan0~26  ; out0             ;
+; |ALU|LessThan0~27  ; |ALU|LessThan0~27  ; out0             ;
+; |ALU|LessThan0~28  ; |ALU|LessThan0~28  ; out0             ;
+; |ALU|Add0~0        ; |ALU|Add0~0        ; out0             ;
+; |ALU|Add0~1        ; |ALU|Add0~1        ; out0             ;
+; |ALU|Add0~2        ; |ALU|Add0~2        ; out0             ;
+; |ALU|Add0~3        ; |ALU|Add0~3        ; out0             ;
+; |ALU|Add0~4        ; |ALU|Add0~4        ; out0             ;
+; |ALU|Add0~5        ; |ALU|Add0~5        ; out0             ;
+; |ALU|Add0~6        ; |ALU|Add0~6        ; out0             ;
+; |ALU|Add0~7        ; |ALU|Add0~7        ; out0             ;
+; |ALU|Add0~8        ; |ALU|Add0~8        ; out0             ;
+; |ALU|Add0~9        ; |ALU|Add0~9        ; out0             ;
+; |ALU|Add0~10       ; |ALU|Add0~10       ; out0             ;
+; |ALU|Add0~11       ; |ALU|Add0~11       ; out0             ;
+; |ALU|Add0~12       ; |ALU|Add0~12       ; out0             ;
+; |ALU|Add0~13       ; |ALU|Add0~13       ; out0             ;
+; |ALU|Add0~14       ; |ALU|Add0~14       ; out0             ;
+; |ALU|Add0~15       ; |ALU|Add0~15       ; out0             ;
+; |ALU|Add0~16       ; |ALU|Add0~16       ; out0             ;
+; |ALU|Add0~17       ; |ALU|Add0~17       ; out0             ;
+; |ALU|Add0~18       ; |ALU|Add0~18       ; out0             ;
+; |ALU|Add0~19       ; |ALU|Add0~19       ; out0             ;
+; |ALU|Add0~20       ; |ALU|Add0~20       ; out0             ;
+; |ALU|Add0~21       ; |ALU|Add0~21       ; out0             ;
+; |ALU|Add0~22       ; |ALU|Add0~22       ; out0             ;
+; |ALU|Add0~23       ; |ALU|Add0~23       ; out0             ;
+; |ALU|Add0~24       ; |ALU|Add0~24       ; out0             ;
+; |ALU|Add0~25       ; |ALU|Add0~25       ; out0             ;
+; |ALU|Add0~26       ; |ALU|Add0~26       ; out0             ;
+; |ALU|Add0~27       ; |ALU|Add0~27       ; out0             ;
+; |ALU|Add0~28       ; |ALU|Add0~28       ; out0             ;
+; |ALU|Add0~29       ; |ALU|Add0~29       ; out0             ;
+; |ALU|Add0~30       ; |ALU|Add0~30       ; out0             ;
+; |ALU|Add0~31       ; |ALU|Add0~31       ; out0             ;
+; |ALU|Add0~32       ; |ALU|Add0~32       ; out0             ;
+; |ALU|Add0~33       ; |ALU|Add0~33       ; out0             ;
+; |ALU|Add0~34       ; |ALU|Add0~34       ; out0             ;
+; |ALU|Add0~35       ; |ALU|Add0~35       ; out0             ;
+; |ALU|Add0~36       ; |ALU|Add0~36       ; out0             ;
+; |ALU|Add1~0        ; |ALU|Add1~0        ; out0             ;
+; |ALU|Add1~1        ; |ALU|Add1~1        ; out0             ;
+; |ALU|Add1~2        ; |ALU|Add1~2        ; out0             ;
+; |ALU|Add1~3        ; |ALU|Add1~3        ; out0             ;
+; |ALU|Add1~4        ; |ALU|Add1~4        ; out0             ;
+; |ALU|Add1~5        ; |ALU|Add1~5        ; out0             ;
+; |ALU|Add1~6        ; |ALU|Add1~6        ; out0             ;
+; |ALU|Add1~7        ; |ALU|Add1~7        ; out0             ;
+; |ALU|Add1~8        ; |ALU|Add1~8        ; out0             ;
+; |ALU|Add1~9        ; |ALU|Add1~9        ; out0             ;
+; |ALU|Add1~10       ; |ALU|Add1~10       ; out0             ;
+; |ALU|Add1~11       ; |ALU|Add1~11       ; out0             ;
+; |ALU|Add1~12       ; |ALU|Add1~12       ; out0             ;
+; |ALU|Add1~13       ; |ALU|Add1~13       ; out0             ;
+; |ALU|Add1~14       ; |ALU|Add1~14       ; out0             ;
+; |ALU|Add1~15       ; |ALU|Add1~15       ; out0             ;
+; |ALU|Add1~16       ; |ALU|Add1~16       ; out0             ;
+; |ALU|Add1~17       ; |ALU|Add1~17       ; out0             ;
+; |ALU|Add1~18       ; |ALU|Add1~18       ; out0             ;
+; |ALU|Add1~19       ; |ALU|Add1~19       ; out0             ;
+; |ALU|Add1~20       ; |ALU|Add1~20       ; out0             ;
+; |ALU|Add1~21       ; |ALU|Add1~21       ; out0             ;
+; |ALU|Add1~22       ; |ALU|Add1~22       ; out0             ;
+; |ALU|Add1~23       ; |ALU|Add1~23       ; out0             ;
+; |ALU|Add1~24       ; |ALU|Add1~24       ; out0             ;
+; |ALU|Add1~25       ; |ALU|Add1~25       ; out0             ;
+; |ALU|Add1~26       ; |ALU|Add1~26       ; out0             ;
+; |ALU|Add1~27       ; |ALU|Add1~27       ; out0             ;
+; |ALU|Add1~28       ; |ALU|Add1~28       ; out0             ;
+; |ALU|Add1~29       ; |ALU|Add1~29       ; out0             ;
+; |ALU|Add1~30       ; |ALU|Add1~30       ; out0             ;
+; |ALU|Add1~31       ; |ALU|Add1~31       ; out0             ;
+; |ALU|Add1~32       ; |ALU|Add1~32       ; out0             ;
+; |ALU|Add1~33       ; |ALU|Add1~33       ; out0             ;
+; |ALU|Add1~34       ; |ALU|Add1~34       ; out0             ;
+; |ALU|Add1~35       ; |ALU|Add1~35       ; out0             ;
+; |ALU|Add1~36       ; |ALU|Add1~36       ; out0             ;
+; |ALU|Add1~37       ; |ALU|Add1~37       ; out0             ;
+; |ALU|Equal0~0      ; |ALU|Equal0~0      ; out0             ;
+; |ALU|Equal1~0      ; |ALU|Equal1~0      ; out0             ;
+; |ALU|Equal2~0      ; |ALU|Equal2~0      ; out0             ;
+; |ALU|Equal3~0      ; |ALU|Equal3~0      ; out0             ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------+
+; Missing 1-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |ALU|C_EN~1        ; |ALU|C_EN~1        ; out              ;
+; |ALU|C~2           ; |ALU|C~2           ; out              ;
+; |ALU|C~3           ; |ALU|C~3           ; out              ;
+; |ALU|C_EN~2        ; |ALU|C_EN~2        ; out              ;
+; |ALU|C_EN~3        ; |ALU|C_EN~3        ; out              ;
+; |ALU|C~4           ; |ALU|C~4           ; out              ;
+; |ALU|C~5           ; |ALU|C~5           ; out              ;
+; |ALU|ALU_TMP[1]~4  ; |ALU|ALU_TMP[1]~4  ; out0             ;
+; |ALU|Z~0           ; |ALU|Z~0           ; out              ;
+; |ALU|ALU_OUT[7]~1  ; |ALU|ALU_OUT[7]~1  ; out              ;
+; |ALU|ALU_OUT[7]~8  ; |ALU|ALU_OUT[7]~8  ; out0             ;
+; |ALU|ALU_OUT[7]~9  ; |ALU|ALU_OUT[7]~9  ; out0             ;
+; |ALU|ALU_TMP[8]    ; |ALU|ALU_TMP[8]    ; out              ;
+; |ALU|ALU_OUT[7]~24 ; |ALU|ALU_OUT[7]~24 ; out0             ;
+; |ALU|FRL           ; |ALU|FRL           ; out              ;
+; |ALU|Z             ; |ALU|Z             ; pin_out          ;
+; |ALU|Equal4~0      ; |ALU|Equal4~0      ; out0             ;
+; |ALU|Equal5~0      ; |ALU|Equal5~0      ; out0             ;
+; |ALU|Equal6~0      ; |ALU|Equal6~0      ; out0             ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------+
+; Missing 0-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |ALU|C~2          ; |ALU|C~2          ; out              ;
+; |ALU|ALU_TMP[1]~4 ; |ALU|ALU_TMP[1]~4 ; out0             ;
+; |ALU|ALU_OUT[7]~1 ; |ALU|ALU_OUT[7]~1 ; out              ;
+; |ALU|M            ; |ALU|M            ; out              ;
+; |ALU|F            ; |ALU|F            ; out              ;
+; |ALU|Equal5~0     ; |ALU|Equal5~0     ; out0             ;
++-------------------+-------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Dec 27 18:28:18 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ALU -c ALU
+Info: Using vector source file "D:/CODES/Quartus/experiment/CPU_COMPONENT/ALU/ALU.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[8]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_O[0]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      91.67 %
+Info: Number of transitions in simulation is 6368
+Info: Quartus II Simulator was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 178 megabytes
+    Info: Processing ended: Thu Dec 27 18:28:18 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

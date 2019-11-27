@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity IRS is
+	port(WE, CLK: in std_logic;
+		RAA, RWBA: in std_logic_vector(1 downto 0);
+		BUS_DATA: in std_logic_vector(7 downto 0);
+		A, B: out std_logic_vector(7 downto 0));
+end IRS;
+
+architecture bhv of IRS is
+signal IR_A, IR_B, IR_C: std_logic_vector(7 downto 0);
+begin
+	A <= IR_A when RAA = "00" and WE = '1' else
+		 IR_B when RAA = "01" and WE = '1' else
+		 IR_C when RAA = "10" and WE = '1' else
+		 "ZZZZZZZZ";
+	B <= IR_A when RWBA = "00" and WE = '1' else
+		 IR_B when RWBA = "01" and WE = '1' else
+		 IR_C when RWBA = "10" and WE = '1' else
+		 "ZZZZZZZZ";
+	process(WE, CLK, RAA, RWBA, BUS_DATA)
+	begin
+		if(CLK'event and CLK = '0') then
+			if(WE = '0') then
+				if(RWBA = "00") then
+					IR_A <= BUS_DATA;
+				elsif(RWBA = "01") then
+					IR_B <= BUS_DATA;
+				elsif(RWBA = "10") then
+					IR_C <= BUS_DATA;
+				end if;
+			end if;
+		end if;
+	end process;
+end bhv;

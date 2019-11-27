@@ -1,0 +1,74 @@
+|serial_adder
+a0 <= srg4:inst5.a0
+si => srg4:inst6.si
+r => srg4:inst6.r
+r => mydff:inst8.r
+r => srg4:inst5.r
+c => srg4:inst6.c
+c => mydff:inst8.c
+c => srg4:inst5.c
+a1 <= srg4:inst5.a1
+a2 <= srg4:inst5.a2
+a3 <= srg4:inst5.a3
+a4 <= srg4:inst6.a0
+a5 <= srg4:inst6.a1
+a6 <= srg4:inst6.a2
+a7 <= srg4:inst6.a3
+
+
+|serial_adder|srg4:inst5
+si => data[3].DATAIN
+r => data[3].ACLR
+r => data[2].ACLR
+r => data[1].ACLR
+r => data[0].ACLR
+r => so~reg0.ENA
+c => data[3].CLK
+c => data[2].CLK
+c => data[1].CLK
+c => data[0].CLK
+c => so~reg0.CLK
+so <= so~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+a2 <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+a1 <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+a0 <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder|full_adder_logic:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst3.IN1
+Y => inst.IN1
+Y => inst3.IN0
+Z => inst1.IN1
+Z => inst4.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder|srg4:inst6
+si => data[3].DATAIN
+r => data[3].ACLR
+r => data[2].ACLR
+r => data[1].ACLR
+r => data[0].ACLR
+r => so~reg0.ENA
+c => data[3].CLK
+c => data[2].CLK
+c => data[1].CLK
+c => data[0].CLK
+c => so~reg0.CLK
+so <= so~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a3 <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+a2 <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+a1 <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+a0 <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|serial_adder|mydff:inst8
+d => q~reg0.DATAIN
+r => q~reg0.ACLR
+c => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

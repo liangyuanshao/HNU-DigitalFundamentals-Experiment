@@ -1,0 +1,362 @@
+Simulator report for IRS
+Fri Dec 28 23:47:51 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 166 nodes    ;
+; Simulation Coverage         ;      71.08 % ;
+; Total Number of Transitions ; 1950         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      71.08 % ;
+; Total nodes checked                                 ; 166          ;
+; Total output ports checked                          ; 166          ;
+; Total output ports with complete 1/0-value coverage ; 118          ;
+; Total output ports with no 1/0-value coverage       ; 14           ;
+; Total output ports with no 1-value coverage         ; 22           ;
+; Total output ports with no 0-value coverage         ; 40           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------+
+; Complete 1/0-Value Coverage                            ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |IRS|A~26        ; |IRS|A~26        ; out0             ;
+; |IRS|A~27        ; |IRS|A~27        ; out0             ;
+; |IRS|A~28        ; |IRS|A~28        ; out0             ;
+; |IRS|A[3]~4      ; |IRS|A[3]~4      ; out              ;
+; |IRS|A[2]~5      ; |IRS|A[2]~5      ; out              ;
+; |IRS|A[1]~6      ; |IRS|A[1]~6      ; out              ;
+; |IRS|B~26        ; |IRS|B~26        ; out0             ;
+; |IRS|B~27        ; |IRS|B~27        ; out0             ;
+; |IRS|B~28        ; |IRS|B~28        ; out0             ;
+; |IRS|B[3]~4      ; |IRS|B[3]~4      ; out              ;
+; |IRS|B[2]~5      ; |IRS|B[2]~5      ; out              ;
+; |IRS|B[1]~6      ; |IRS|B[1]~6      ; out              ;
+; |IRS|IR_A~0      ; |IRS|IR_A~0      ; out              ;
+; |IRS|IR_A~1      ; |IRS|IR_A~1      ; out              ;
+; |IRS|IR_A~2      ; |IRS|IR_A~2      ; out              ;
+; |IRS|IR_A~3      ; |IRS|IR_A~3      ; out              ;
+; |IRS|IR_A~4      ; |IRS|IR_A~4      ; out              ;
+; |IRS|IR_A~5      ; |IRS|IR_A~5      ; out              ;
+; |IRS|IR_A~6      ; |IRS|IR_A~6      ; out              ;
+; |IRS|IR_A~7      ; |IRS|IR_A~7      ; out              ;
+; |IRS|IR_B~0      ; |IRS|IR_B~0      ; out              ;
+; |IRS|IR_B~1      ; |IRS|IR_B~1      ; out              ;
+; |IRS|IR_B~2      ; |IRS|IR_B~2      ; out              ;
+; |IRS|IR_B~3      ; |IRS|IR_B~3      ; out              ;
+; |IRS|IR_B~4      ; |IRS|IR_B~4      ; out              ;
+; |IRS|IR_B~5      ; |IRS|IR_B~5      ; out              ;
+; |IRS|IR_B~6      ; |IRS|IR_B~6      ; out              ;
+; |IRS|IR_B~7      ; |IRS|IR_B~7      ; out              ;
+; |IRS|IR_B~8      ; |IRS|IR_B~8      ; out              ;
+; |IRS|IR_B~9      ; |IRS|IR_B~9      ; out              ;
+; |IRS|IR_B~10     ; |IRS|IR_B~10     ; out              ;
+; |IRS|IR_B~11     ; |IRS|IR_B~11     ; out              ;
+; |IRS|IR_B~12     ; |IRS|IR_B~12     ; out              ;
+; |IRS|IR_B~13     ; |IRS|IR_B~13     ; out              ;
+; |IRS|IR_B~14     ; |IRS|IR_B~14     ; out              ;
+; |IRS|IR_B~15     ; |IRS|IR_B~15     ; out              ;
+; |IRS|IR_C~0      ; |IRS|IR_C~0      ; out              ;
+; |IRS|IR_C~1      ; |IRS|IR_C~1      ; out              ;
+; |IRS|IR_C~2      ; |IRS|IR_C~2      ; out              ;
+; |IRS|IR_C~3      ; |IRS|IR_C~3      ; out              ;
+; |IRS|IR_C~4      ; |IRS|IR_C~4      ; out              ;
+; |IRS|IR_C~5      ; |IRS|IR_C~5      ; out              ;
+; |IRS|IR_C~6      ; |IRS|IR_C~6      ; out              ;
+; |IRS|IR_C~7      ; |IRS|IR_C~7      ; out              ;
+; |IRS|IR_C~8      ; |IRS|IR_C~8      ; out              ;
+; |IRS|IR_C~9      ; |IRS|IR_C~9      ; out              ;
+; |IRS|IR_C~10     ; |IRS|IR_C~10     ; out              ;
+; |IRS|IR_C~11     ; |IRS|IR_C~11     ; out              ;
+; |IRS|IR_C~12     ; |IRS|IR_C~12     ; out              ;
+; |IRS|IR_C~13     ; |IRS|IR_C~13     ; out              ;
+; |IRS|IR_C~14     ; |IRS|IR_C~14     ; out              ;
+; |IRS|IR_C~15     ; |IRS|IR_C~15     ; out              ;
+; |IRS|IR_C~16     ; |IRS|IR_C~16     ; out              ;
+; |IRS|IR_C~17     ; |IRS|IR_C~17     ; out              ;
+; |IRS|IR_C~18     ; |IRS|IR_C~18     ; out              ;
+; |IRS|IR_C~19     ; |IRS|IR_C~19     ; out              ;
+; |IRS|IR_C~20     ; |IRS|IR_C~20     ; out              ;
+; |IRS|IR_C~21     ; |IRS|IR_C~21     ; out              ;
+; |IRS|IR_C~22     ; |IRS|IR_C~22     ; out              ;
+; |IRS|IR_C~23     ; |IRS|IR_C~23     ; out              ;
+; |IRS|IR_C[1]     ; |IRS|IR_C[1]     ; regout           ;
+; |IRS|IR_C[2]     ; |IRS|IR_C[2]     ; regout           ;
+; |IRS|IR_A[0]     ; |IRS|IR_A[0]     ; regout           ;
+; |IRS|IR_A[1]     ; |IRS|IR_A[1]     ; regout           ;
+; |IRS|IR_A[2]     ; |IRS|IR_A[2]     ; regout           ;
+; |IRS|IR_A[3]     ; |IRS|IR_A[3]     ; regout           ;
+; |IRS|IR_A[4]     ; |IRS|IR_A[4]     ; regout           ;
+; |IRS|IR_A[5]     ; |IRS|IR_A[5]     ; regout           ;
+; |IRS|IR_A[6]     ; |IRS|IR_A[6]     ; regout           ;
+; |IRS|IR_A[7]     ; |IRS|IR_A[7]     ; regout           ;
+; |IRS|B[0]~8      ; |IRS|B[0]~8      ; out              ;
+; |IRS|B[0]~9      ; |IRS|B[0]~9      ; out              ;
+; |IRS|B[1]~10     ; |IRS|B[1]~10     ; out              ;
+; |IRS|B[1]~11     ; |IRS|B[1]~11     ; out              ;
+; |IRS|B[2]~12     ; |IRS|B[2]~12     ; out              ;
+; |IRS|B[2]~13     ; |IRS|B[2]~13     ; out              ;
+; |IRS|B[3]~14     ; |IRS|B[3]~14     ; out              ;
+; |IRS|B[3]~15     ; |IRS|B[3]~15     ; out              ;
+; |IRS|B[7]~22     ; |IRS|B[7]~22     ; out0             ;
+; |IRS|B[7]~24     ; |IRS|B[7]~24     ; out0             ;
+; |IRS|A[0]~8      ; |IRS|A[0]~8      ; out              ;
+; |IRS|A[0]~9      ; |IRS|A[0]~9      ; out              ;
+; |IRS|A[1]~10     ; |IRS|A[1]~10     ; out              ;
+; |IRS|A[1]~11     ; |IRS|A[1]~11     ; out              ;
+; |IRS|A[2]~12     ; |IRS|A[2]~12     ; out              ;
+; |IRS|A[2]~13     ; |IRS|A[2]~13     ; out              ;
+; |IRS|A[3]~14     ; |IRS|A[3]~14     ; out              ;
+; |IRS|A[3]~15     ; |IRS|A[3]~15     ; out              ;
+; |IRS|A[7]~22     ; |IRS|A[7]~22     ; out0             ;
+; |IRS|A[7]~24     ; |IRS|A[7]~24     ; out0             ;
+; |IRS|WE          ; |IRS|WE          ; out              ;
+; |IRS|CLK         ; |IRS|CLK         ; out              ;
+; |IRS|RAA[0]      ; |IRS|RAA[0]      ; out              ;
+; |IRS|RAA[1]      ; |IRS|RAA[1]      ; out              ;
+; |IRS|RWBA[0]     ; |IRS|RWBA[0]     ; out              ;
+; |IRS|RWBA[1]     ; |IRS|RWBA[1]     ; out              ;
+; |IRS|BUS_DATA[0] ; |IRS|BUS_DATA[0] ; out              ;
+; |IRS|BUS_DATA[1] ; |IRS|BUS_DATA[1] ; out              ;
+; |IRS|BUS_DATA[2] ; |IRS|BUS_DATA[2] ; out              ;
+; |IRS|BUS_DATA[3] ; |IRS|BUS_DATA[3] ; out              ;
+; |IRS|BUS_DATA[4] ; |IRS|BUS_DATA[4] ; out              ;
+; |IRS|BUS_DATA[5] ; |IRS|BUS_DATA[5] ; out              ;
+; |IRS|BUS_DATA[6] ; |IRS|BUS_DATA[6] ; out              ;
+; |IRS|BUS_DATA[7] ; |IRS|BUS_DATA[7] ; out              ;
+; |IRS|A[0]        ; |IRS|A[0]        ; pin_out          ;
+; |IRS|A[1]        ; |IRS|A[1]        ; pin_out          ;
+; |IRS|A[2]        ; |IRS|A[2]        ; pin_out          ;
+; |IRS|A[3]        ; |IRS|A[3]        ; pin_out          ;
+; |IRS|B[0]        ; |IRS|B[0]        ; pin_out          ;
+; |IRS|B[1]        ; |IRS|B[1]        ; pin_out          ;
+; |IRS|B[2]        ; |IRS|B[2]        ; pin_out          ;
+; |IRS|B[3]        ; |IRS|B[3]        ; pin_out          ;
+; |IRS|Equal0~0    ; |IRS|Equal0~0    ; out0             ;
+; |IRS|Equal1~0    ; |IRS|Equal1~0    ; out0             ;
+; |IRS|Equal2~0    ; |IRS|Equal2~0    ; out0             ;
+; |IRS|Equal3~0    ; |IRS|Equal3~0    ; out0             ;
+; |IRS|Equal4~0    ; |IRS|Equal4~0    ; out0             ;
+; |IRS|Equal5~0    ; |IRS|Equal5~0    ; out0             ;
++------------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------+
+; Missing 1-Value Coverage                           ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |IRS|A[7]~0  ; |IRS|A[7]~0      ; out              ;
+; |IRS|A[6]~1  ; |IRS|A[6]~1      ; out              ;
+; |IRS|B[7]~0  ; |IRS|B[7]~0      ; out              ;
+; |IRS|B[6]~1  ; |IRS|B[6]~1      ; out              ;
+; |IRS|IR_C[6] ; |IRS|IR_C[6]     ; regout           ;
+; |IRS|IR_C[7] ; |IRS|IR_C[7]     ; regout           ;
+; |IRS|IR_B[1] ; |IRS|IR_B[1]     ; regout           ;
+; |IRS|IR_B[3] ; |IRS|IR_B[3]     ; regout           ;
+; |IRS|IR_B[6] ; |IRS|IR_B[6]     ; regout           ;
+; |IRS|IR_B[7] ; |IRS|IR_B[7]     ; regout           ;
+; |IRS|B[6]~20 ; |IRS|B[6]~20     ; out              ;
+; |IRS|B[6]~21 ; |IRS|B[6]~21     ; out              ;
+; |IRS|B[7]~23 ; |IRS|B[7]~23     ; out              ;
+; |IRS|B[7]~25 ; |IRS|B[7]~25     ; out              ;
+; |IRS|A[6]~20 ; |IRS|A[6]~20     ; out              ;
+; |IRS|A[6]~21 ; |IRS|A[6]~21     ; out              ;
+; |IRS|A[7]~23 ; |IRS|A[7]~23     ; out              ;
+; |IRS|A[7]~25 ; |IRS|A[7]~25     ; out              ;
+; |IRS|A[6]    ; |IRS|A[6]        ; pin_out          ;
+; |IRS|A[7]    ; |IRS|A[7]        ; pin_out          ;
+; |IRS|B[6]    ; |IRS|B[6]        ; pin_out          ;
+; |IRS|B[7]    ; |IRS|B[7]        ; pin_out          ;
++--------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------+
+; Missing 0-Value Coverage                           ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |IRS|A[7]~0  ; |IRS|A[7]~0      ; out              ;
+; |IRS|A[6]~1  ; |IRS|A[6]~1      ; out              ;
+; |IRS|A[5]~2  ; |IRS|A[5]~2      ; out              ;
+; |IRS|A[4]~3  ; |IRS|A[4]~3      ; out              ;
+; |IRS|IR_C[0] ; |IRS|IR_C[0]     ; regout           ;
+; |IRS|A[0]~7  ; |IRS|A[0]~7      ; out              ;
+; |IRS|B[7]~0  ; |IRS|B[7]~0      ; out              ;
+; |IRS|B[6]~1  ; |IRS|B[6]~1      ; out              ;
+; |IRS|B[5]~2  ; |IRS|B[5]~2      ; out              ;
+; |IRS|B[4]~3  ; |IRS|B[4]~3      ; out              ;
+; |IRS|IR_C[3] ; |IRS|IR_C[3]     ; regout           ;
+; |IRS|IR_C[4] ; |IRS|IR_C[4]     ; regout           ;
+; |IRS|IR_C[5] ; |IRS|IR_C[5]     ; regout           ;
+; |IRS|IR_C[6] ; |IRS|IR_C[6]     ; regout           ;
+; |IRS|IR_C[7] ; |IRS|IR_C[7]     ; regout           ;
+; |IRS|IR_B[0] ; |IRS|IR_B[0]     ; regout           ;
+; |IRS|IR_B[1] ; |IRS|IR_B[1]     ; regout           ;
+; |IRS|IR_B[2] ; |IRS|IR_B[2]     ; regout           ;
+; |IRS|IR_B[3] ; |IRS|IR_B[3]     ; regout           ;
+; |IRS|IR_B[4] ; |IRS|IR_B[4]     ; regout           ;
+; |IRS|IR_B[5] ; |IRS|IR_B[5]     ; regout           ;
+; |IRS|IR_B[6] ; |IRS|IR_B[6]     ; regout           ;
+; |IRS|IR_B[7] ; |IRS|IR_B[7]     ; regout           ;
+; |IRS|B[0]~7  ; |IRS|B[0]~7      ; out              ;
+; |IRS|B[4]~16 ; |IRS|B[4]~16     ; out              ;
+; |IRS|B[4]~17 ; |IRS|B[4]~17     ; out              ;
+; |IRS|B[5]~18 ; |IRS|B[5]~18     ; out              ;
+; |IRS|B[5]~19 ; |IRS|B[5]~19     ; out              ;
+; |IRS|B[6]~20 ; |IRS|B[6]~20     ; out              ;
+; |IRS|B[7]~23 ; |IRS|B[7]~23     ; out              ;
+; |IRS|A[4]~16 ; |IRS|A[4]~16     ; out              ;
+; |IRS|A[4]~17 ; |IRS|A[4]~17     ; out              ;
+; |IRS|A[5]~18 ; |IRS|A[5]~18     ; out              ;
+; |IRS|A[5]~19 ; |IRS|A[5]~19     ; out              ;
+; |IRS|A[6]~20 ; |IRS|A[6]~20     ; out              ;
+; |IRS|A[7]~23 ; |IRS|A[7]~23     ; out              ;
+; |IRS|A[4]    ; |IRS|A[4]        ; pin_out          ;
+; |IRS|A[5]    ; |IRS|A[5]        ; pin_out          ;
+; |IRS|B[4]    ; |IRS|B[4]        ; pin_out          ;
+; |IRS|B[5]    ; |IRS|B[5]        ; pin_out          ;
++--------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Dec 28 23:47:51 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off IRS -c IRS
+Info: Using vector source file "D:/CODES/Quartus/experiment/exp4/IRS/IRS.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|IRS|IR_A[0]"
+Warning: Found clock-sensitive change during active clock edge at time 40.0 ns on register "|IRS|IR_B[0]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|IRS|IR_C[0]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|IRS|IR_C[1]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|IRS|IR_C[2]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|IRS|IR_C[4]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|IRS|IR_C[5]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|IRS|IR_B[1]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_B[2]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_B[3]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_B[4]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_B[5]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_A[1]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_A[2]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_A[3]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_A[4]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_A[5]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|IRS|IR_A[7]"
+Warning: Found clock-sensitive change during active clock edge at time 140.0 ns on register "|IRS|IR_B[7]"
+Warning: Found clock-sensitive change during active clock edge at time 180.0 ns on register "|IRS|IR_C[6]"
+Warning: Found clock-sensitive change during active clock edge at time 180.0 ns on register "|IRS|IR_C[7]"
+Warning: Found clock-sensitive change during active clock edge at time 200.0 ns on register "|IRS|IR_A[6]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      71.08 %
+Info: Number of transitions in simulation is 1950
+Info: Quartus II Simulator was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 178 megabytes
+    Info: Processing ended: Fri Dec 28 23:47:51 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

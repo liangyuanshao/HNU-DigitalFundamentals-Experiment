@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Thu Dec 27 19:51:13 2018
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : ZCR
+Top-level Entity Name : ZCR
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 2
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 6
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

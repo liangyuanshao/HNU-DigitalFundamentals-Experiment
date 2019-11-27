@@ -1,0 +1,137 @@
+|ripple_carry_adder
+a[0] => full_adder:G:0:gi.x
+a[1] => full_adder:G:1:gi.x
+a[2] => full_adder:G:2:gi.x
+a[3] => full_adder:G:3:gi.x
+b[0] => full_adder:G:0:gi.y
+b[1] => full_adder:G:1:gi.y
+b[2] => full_adder:G:2:gi.y
+b[3] => full_adder:G:3:gi.y
+c0 => full_adder:G:0:gi.z
+s[0] <= full_adder:G:0:gi.s
+s[1] <= full_adder:G:1:gi.s
+s[2] <= full_adder:G:2:gi.s
+s[3] <= full_adder:G:3:gi.s
+c4 <= full_adder:G:3:gi.c
+
+
+|ripple_carry_adder|full_adder:\G:0:gi
+x => half_adder:g0.x
+y => half_adder:g0.y
+z => half_adder:g1.y
+s <= half_adder:g1.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:0:gi|half_adder:g0
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:0:gi|half_adder:g1
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:1:gi
+x => half_adder:g0.x
+y => half_adder:g0.y
+z => half_adder:g1.y
+s <= half_adder:g1.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:1:gi|half_adder:g0
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:1:gi|half_adder:g1
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:2:gi
+x => half_adder:g0.x
+y => half_adder:g0.y
+z => half_adder:g1.y
+s <= half_adder:g1.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:2:gi|half_adder:g0
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:2:gi|half_adder:g1
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:3:gi
+x => half_adder:g0.x
+y => half_adder:g0.y
+z => half_adder:g1.y
+s <= half_adder:g1.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:3:gi|half_adder:g0
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ripple_carry_adder|full_adder:\G:3:gi|half_adder:g1
+x => c~0.IN0
+x => s~1.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+y => s~1.IN1
+s <= s~2.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

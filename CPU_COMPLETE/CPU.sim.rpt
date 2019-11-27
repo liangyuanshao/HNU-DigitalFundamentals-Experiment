@@ -1,0 +1,848 @@
+Simulator report for CPU
+Mon Dec 31 15:23:04 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 636 nodes    ;
+; Simulation Coverage         ;      88.84 % ;
+; Total Number of Transitions ; 6681         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++---------------------------------------------------------------------------------------------------+
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ALTSYNCRAM ;
++---------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      88.84 % ;
+; Total nodes checked                                 ; 636          ;
+; Total output ports checked                          ; 636          ;
+; Total output ports with complete 1/0-value coverage ; 565          ;
+; Total output ports with no 1/0-value coverage       ; 44           ;
+; Total output ports with no 1-value coverage         ; 52           ;
+; Total output ports with no 0-value coverage         ; 63           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                            ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                           ; Output Port Name                                                                              ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+; |CPU|SM                                                                                             ; |CPU|SM                                                                                       ; pin_out          ;
+; |CPU|CLK                                                                                            ; |CPU|CLK                                                                                      ; out              ;
+; |CPU|MOVA                                                                                           ; |CPU|MOVA                                                                                     ; pin_out          ;
+; |CPU|I[7]                                                                                           ; |CPU|I[7]                                                                                     ; pin_out          ;
+; |CPU|I[6]                                                                                           ; |CPU|I[6]                                                                                     ; pin_out          ;
+; |CPU|I[5]                                                                                           ; |CPU|I[5]                                                                                     ; pin_out          ;
+; |CPU|I[4]                                                                                           ; |CPU|I[4]                                                                                     ; pin_out          ;
+; |CPU|I[3]                                                                                           ; |CPU|I[3]                                                                                     ; pin_out          ;
+; |CPU|I[2]                                                                                           ; |CPU|I[2]                                                                                     ; pin_out          ;
+; |CPU|I[1]                                                                                           ; |CPU|I[1]                                                                                     ; pin_out          ;
+; |CPU|I[0]                                                                                           ; |CPU|I[0]                                                                                     ; pin_out          ;
+; |CPU|LDIR                                                                                           ; |CPU|LDIR                                                                                     ; pin_out          ;
+; |CPU|BUS[7]                                                                                         ; |CPU|BUS[7]                                                                                   ; pin_out          ;
+; |CPU|BUS[6]                                                                                         ; |CPU|BUS[6]                                                                                   ; pin_out          ;
+; |CPU|BUS[5]                                                                                         ; |CPU|BUS[5]                                                                                   ; pin_out          ;
+; |CPU|BUS[4]                                                                                         ; |CPU|BUS[4]                                                                                   ; pin_out          ;
+; |CPU|BUS[3]                                                                                         ; |CPU|BUS[3]                                                                                   ; pin_out          ;
+; |CPU|BUS[2]                                                                                         ; |CPU|BUS[2]                                                                                   ; pin_out          ;
+; |CPU|BUS[1]                                                                                         ; |CPU|BUS[1]                                                                                   ; pin_out          ;
+; |CPU|BUS[0]                                                                                         ; |CPU|BUS[0]                                                                                   ; pin_out          ;
+; |CPU|BUS~0                                                                                          ; |CPU|BUS~0                                                                                    ; out0             ;
+; |CPU|BUS~1                                                                                          ; |CPU|BUS~1                                                                                    ; out0             ;
+; |CPU|BUS~2                                                                                          ; |CPU|BUS~2                                                                                    ; out0             ;
+; |CPU|BUS~3                                                                                          ; |CPU|BUS~3                                                                                    ; out0             ;
+; |CPU|BUS~4                                                                                          ; |CPU|BUS~4                                                                                    ; out0             ;
+; |CPU|BUS~5                                                                                          ; |CPU|BUS~5                                                                                    ; out0             ;
+; |CPU|BUS~6                                                                                          ; |CPU|BUS~6                                                                                    ; out0             ;
+; |CPU|BUS~7                                                                                          ; |CPU|BUS~7                                                                                    ; out0             ;
+; |CPU|M                                                                                              ; |CPU|M                                                                                        ; pin_out          ;
+; |CPU|F                                                                                              ; |CPU|F                                                                                        ; pin_out          ;
+; |CPU|FRL                                                                                            ; |CPU|FRL                                                                                      ; pin_out          ;
+; |CPU|FRR                                                                                            ; |CPU|FRR                                                                                      ; pin_out          ;
+; |CPU|WE_GR                                                                                          ; |CPU|WE_GR                                                                                    ; pin_out          ;
+; |CPU|RAA[1]                                                                                         ; |CPU|RAA[1]                                                                                   ; pin_out          ;
+; |CPU|RAA[0]                                                                                         ; |CPU|RAA[0]                                                                                   ; pin_out          ;
+; |CPU|RWBA[1]                                                                                        ; |CPU|RWBA[1]                                                                                  ; pin_out          ;
+; |CPU|RWBA[0]                                                                                        ; |CPU|RWBA[0]                                                                                  ; pin_out          ;
+; |CPU|S[3]                                                                                           ; |CPU|S[3]                                                                                     ; pin_out          ;
+; |CPU|S[2]                                                                                           ; |CPU|S[2]                                                                                     ; pin_out          ;
+; |CPU|S[1]                                                                                           ; |CPU|S[1]                                                                                     ; pin_out          ;
+; |CPU|S[0]                                                                                           ; |CPU|S[0]                                                                                     ; pin_out          ;
+; |CPU|EN_IN                                                                                          ; |CPU|EN_IN                                                                                    ; pin_out          ;
+; |CPU|INPUT[2]                                                                                       ; |CPU|INPUT[2]                                                                                 ; out              ;
+; |CPU|XL                                                                                             ; |CPU|XL                                                                                       ; pin_out          ;
+; |CPU|DL                                                                                             ; |CPU|DL                                                                                       ; pin_out          ;
+; |CPU|MADD[1]                                                                                        ; |CPU|MADD[1]                                                                                  ; pin_out          ;
+; |CPU|MADD[0]                                                                                        ; |CPU|MADD[0]                                                                                  ; pin_out          ;
+; |CPU|PC_ADD[5]                                                                                      ; |CPU|PC_ADD[5]                                                                                ; pin_out          ;
+; |CPU|PC_ADD[2]                                                                                      ; |CPU|PC_ADD[2]                                                                                ; pin_out          ;
+; |CPU|PC_ADD[1]                                                                                      ; |CPU|PC_ADD[1]                                                                                ; pin_out          ;
+; |CPU|PC_ADD[0]                                                                                      ; |CPU|PC_ADD[0]                                                                                ; pin_out          ;
+; |CPU|INPC                                                                                           ; |CPU|INPC                                                                                     ; pin_out          ;
+; |CPU|LDPC                                                                                           ; |CPU|LDPC                                                                                     ; pin_out          ;
+; |CPU|MOVB                                                                                           ; |CPU|MOVB                                                                                     ; pin_out          ;
+; |CPU|MOVC                                                                                           ; |CPU|MOVC                                                                                     ; pin_out          ;
+; |CPU|ALU                                                                                            ; |CPU|ALU                                                                                      ; pin_out          ;
+; |CPU|NOT0                                                                                           ; |CPU|NOT0                                                                                     ; pin_out          ;
+; |CPU|RSL                                                                                            ; |CPU|RSL                                                                                      ; pin_out          ;
+; |CPU|RSR                                                                                            ; |CPU|RSR                                                                                      ; pin_out          ;
+; |CPU|JMP                                                                                            ; |CPU|JMP                                                                                      ; pin_out          ;
+; |CPU|JZ                                                                                             ; |CPU|JZ                                                                                       ; pin_out          ;
+; |CPU|JC                                                                                             ; |CPU|JC                                                                                       ; pin_out          ;
+; |CPU|IN0                                                                                            ; |CPU|IN0                                                                                      ; pin_out          ;
+; |CPU|OUT0                                                                                           ; |CPU|OUT0                                                                                     ; pin_out          ;
+; |CPU|NOP                                                                                            ; |CPU|NOP                                                                                      ; pin_out          ;
+; |CPU|C                                                                                              ; |CPU|C                                                                                        ; pin_out          ;
+; |CPU|Z                                                                                              ; |CPU|Z                                                                                        ; pin_out          ;
+; |CPU|EN_OUT                                                                                         ; |CPU|EN_OUT                                                                                   ; pin_out          ;
+; |CPU|OUTPUT[7]                                                                                      ; |CPU|OUTPUT[7]                                                                                ; pin_out          ;
+; |CPU|OUTPUT[6]                                                                                      ; |CPU|OUTPUT[6]                                                                                ; pin_out          ;
+; |CPU|OUTPUT[5]                                                                                      ; |CPU|OUTPUT[5]                                                                                ; pin_out          ;
+; |CPU|OUTPUT[4]                                                                                      ; |CPU|OUTPUT[4]                                                                                ; pin_out          ;
+; |CPU|OUTPUT[3]                                                                                      ; |CPU|OUTPUT[3]                                                                                ; pin_out          ;
+; |CPU|OUTPUT[2]                                                                                      ; |CPU|OUTPUT[2]                                                                                ; pin_out          ;
+; |CPU|OUTPUT[1]                                                                                      ; |CPU|OUTPUT[1]                                                                                ; pin_out          ;
+; |CPU|OUTPUT_A[7]                                                                                    ; |CPU|OUTPUT_A[7]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_A[6]                                                                                    ; |CPU|OUTPUT_A[6]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_A[5]                                                                                    ; |CPU|OUTPUT_A[5]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_A[4]                                                                                    ; |CPU|OUTPUT_A[4]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_A[3]                                                                                    ; |CPU|OUTPUT_A[3]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_A[2]                                                                                    ; |CPU|OUTPUT_A[2]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_A[1]                                                                                    ; |CPU|OUTPUT_A[1]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_A[0]                                                                                    ; |CPU|OUTPUT_A[0]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_B[7]                                                                                    ; |CPU|OUTPUT_B[7]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_B[6]                                                                                    ; |CPU|OUTPUT_B[6]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_B[5]                                                                                    ; |CPU|OUTPUT_B[5]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_B[3]                                                                                    ; |CPU|OUTPUT_B[3]                                                                              ; pin_out          ;
+; |CPU|OUTPUT_B[0]                                                                                    ; |CPU|OUTPUT_B[0]                                                                              ; pin_out          ;
+; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[1]                                                                ; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[1]                                                          ; out              ;
+; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[2]                                                                ; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[2]                                                          ; out              ;
+; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[3]                                                                ; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[3]                                                          ; out              ;
+; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[4]                                                                ; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[4]                                                          ; out              ;
+; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[5]                                                                ; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[5]                                                          ; out              ;
+; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[6]                                                                ; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[6]                                                          ; out              ;
+; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[7]                                                                ; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[7]                                                          ; out              ;
+; |CPU|ZCR:inst11|C_DATA                                                                              ; |CPU|ZCR:inst11|C_DATA                                                                        ; out              ;
+; |CPU|ZCR:inst11|Z_DATA                                                                              ; |CPU|ZCR:inst11|Z_DATA                                                                        ; out              ;
+; |CPU|PC:inst9|process_0~0                                                                           ; |CPU|PC:inst9|process_0~0                                                                     ; out0             ;
+; |CPU|PC:inst9|process_0~1                                                                           ; |CPU|PC:inst9|process_0~1                                                                     ; out0             ;
+; |CPU|PC:inst9|ADD~0                                                                                 ; |CPU|PC:inst9|ADD~0                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~1                                                                                 ; |CPU|PC:inst9|ADD~1                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~2                                                                                 ; |CPU|PC:inst9|ADD~2                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~3                                                                                 ; |CPU|PC:inst9|ADD~3                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~5                                                                                 ; |CPU|PC:inst9|ADD~5                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~6                                                                                 ; |CPU|PC:inst9|ADD~6                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~7                                                                                 ; |CPU|PC:inst9|ADD~7                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~8                                                                                 ; |CPU|PC:inst9|ADD~8                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~9                                                                                 ; |CPU|PC:inst9|ADD~9                                                                           ; out              ;
+; |CPU|PC:inst9|ADD~10                                                                                ; |CPU|PC:inst9|ADD~10                                                                          ; out              ;
+; |CPU|PC:inst9|ADD~11                                                                                ; |CPU|PC:inst9|ADD~11                                                                          ; out              ;
+; |CPU|PC:inst9|ADD~13                                                                                ; |CPU|PC:inst9|ADD~13                                                                          ; out              ;
+; |CPU|PC:inst9|ADD~14                                                                                ; |CPU|PC:inst9|ADD~14                                                                          ; out              ;
+; |CPU|PC:inst9|ADD~15                                                                                ; |CPU|PC:inst9|ADD~15                                                                          ; out              ;
+; |CPU|PC:inst9|ADD[0]                                                                                ; |CPU|PC:inst9|ADD[0]                                                                          ; regout           ;
+; |CPU|PC:inst9|ADD[1]                                                                                ; |CPU|PC:inst9|ADD[1]                                                                          ; regout           ;
+; |CPU|PC:inst9|ADD[2]                                                                                ; |CPU|PC:inst9|ADD[2]                                                                          ; regout           ;
+; |CPU|PC:inst9|ADD[5]                                                                                ; |CPU|PC:inst9|ADD[5]                                                                          ; regout           ;
+; |CPU|MUX_3:inst8|ADD[7]~0                                                                           ; |CPU|MUX_3:inst8|ADD[7]~0                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[6]~1                                                                           ; |CPU|MUX_3:inst8|ADD[6]~1                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[5]~2                                                                           ; |CPU|MUX_3:inst8|ADD[5]~2                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[4]~3                                                                           ; |CPU|MUX_3:inst8|ADD[4]~3                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[3]~4                                                                           ; |CPU|MUX_3:inst8|ADD[3]~4                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[2]~5                                                                           ; |CPU|MUX_3:inst8|ADD[2]~5                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[1]~6                                                                           ; |CPU|MUX_3:inst8|ADD[1]~6                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[0]~7                                                                           ; |CPU|MUX_3:inst8|ADD[0]~7                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[0]~8                                                                           ; |CPU|MUX_3:inst8|ADD[0]~8                                                                     ; out              ;
+; |CPU|MUX_3:inst8|ADD[0]                                                                             ; |CPU|MUX_3:inst8|ADD[0]                                                                       ; out              ;
+; |CPU|MUX_3:inst8|ADD[1]~10                                                                          ; |CPU|MUX_3:inst8|ADD[1]~10                                                                    ; out              ;
+; |CPU|MUX_3:inst8|ADD[1]                                                                             ; |CPU|MUX_3:inst8|ADD[1]                                                                       ; out              ;
+; |CPU|MUX_3:inst8|ADD[2]~12                                                                          ; |CPU|MUX_3:inst8|ADD[2]~12                                                                    ; out              ;
+; |CPU|MUX_3:inst8|ADD[2]                                                                             ; |CPU|MUX_3:inst8|ADD[2]                                                                       ; out              ;
+; |CPU|MUX_3:inst8|ADD[4]~16                                                                          ; |CPU|MUX_3:inst8|ADD[4]~16                                                                    ; out              ;
+; |CPU|MUX_3:inst8|ADD[4]                                                                             ; |CPU|MUX_3:inst8|ADD[4]                                                                       ; out              ;
+; |CPU|MUX_3:inst8|ADD[5]~18                                                                          ; |CPU|MUX_3:inst8|ADD[5]~18                                                                    ; out              ;
+; |CPU|MUX_3:inst8|ADD[5]                                                                             ; |CPU|MUX_3:inst8|ADD[5]                                                                       ; out              ;
+; |CPU|MUX_3:inst8|ADD[6]~20                                                                          ; |CPU|MUX_3:inst8|ADD[6]~20                                                                    ; out              ;
+; |CPU|MUX_3:inst8|ADD[6]                                                                             ; |CPU|MUX_3:inst8|ADD[6]                                                                       ; out              ;
+; |CPU|MUX_3:inst8|ADD[7]~22                                                                          ; |CPU|MUX_3:inst8|ADD[7]~22                                                                    ; out0             ;
+; |CPU|MUX_3:inst8|ADD[7]~23                                                                          ; |CPU|MUX_3:inst8|ADD[7]~23                                                                    ; out              ;
+; |CPU|MUX_3:inst8|ADD[7]                                                                             ; |CPU|MUX_3:inst8|ADD[7]                                                                       ; out              ;
+; |CPU|lpm_ram_io:inst12|_~1                                                                          ; |CPU|lpm_ram_io:inst12|_~1                                                                    ; out0             ;
+; |CPU|lpm_ram_io:inst12|datatri[7]                                                                   ; |CPU|lpm_ram_io:inst12|datatri[7]                                                             ; out              ;
+; |CPU|lpm_ram_io:inst12|datatri[6]                                                                   ; |CPU|lpm_ram_io:inst12|datatri[6]                                                             ; out              ;
+; |CPU|lpm_ram_io:inst12|datatri[5]                                                                   ; |CPU|lpm_ram_io:inst12|datatri[5]                                                             ; out              ;
+; |CPU|lpm_ram_io:inst12|datatri[4]                                                                   ; |CPU|lpm_ram_io:inst12|datatri[4]                                                             ; out              ;
+; |CPU|lpm_ram_io:inst12|datatri[3]                                                                   ; |CPU|lpm_ram_io:inst12|datatri[3]                                                             ; out              ;
+; |CPU|lpm_ram_io:inst12|datatri[2]                                                                   ; |CPU|lpm_ram_io:inst12|datatri[2]                                                             ; out              ;
+; |CPU|lpm_ram_io:inst12|datatri[1]                                                                   ; |CPU|lpm_ram_io:inst12|datatri[1]                                                             ; out              ;
+; |CPU|lpm_ram_io:inst12|datatri[0]                                                                   ; |CPU|lpm_ram_io:inst12|datatri[0]                                                             ; out              ;
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ram_block1a0 ; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|q_a[0] ; portadataout0    ;
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ram_block1a1 ; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|q_a[1] ; portadataout0    ;
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ram_block1a2 ; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|q_a[2] ; portadataout0    ;
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ram_block1a3 ; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|q_a[3] ; portadataout0    ;
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ram_block1a4 ; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|q_a[4] ; portadataout0    ;
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ram_block1a5 ; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|q_a[5] ; portadataout0    ;
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ram_block1a6 ; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|q_a[6] ; portadataout0    ;
+; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|ram_block1a7 ; |CPU|lpm_ram_io:inst12|altram:sram|altsyncram:ram_block|altsyncram_od91:auto_generated|q_a[7] ; portadataout0    ;
+; |CPU|MY_INPUT:inst14|BUS_DATA[1]                                                                    ; |CPU|MY_INPUT:inst14|BUS_DATA[1]                                                              ; out              ;
+; |CPU|MY_INPUT:inst14|BUS_DATA[2]                                                                    ; |CPU|MY_INPUT:inst14|BUS_DATA[2]                                                              ; out              ;
+; |CPU|MY_INPUT:inst14|BUS_DATA[3]                                                                    ; |CPU|MY_INPUT:inst14|BUS_DATA[3]                                                              ; out              ;
+; |CPU|MY_INPUT:inst14|BUS_DATA[4]                                                                    ; |CPU|MY_INPUT:inst14|BUS_DATA[4]                                                              ; out              ;
+; |CPU|MY_INPUT:inst14|BUS_DATA[6]                                                                    ; |CPU|MY_INPUT:inst14|BUS_DATA[6]                                                              ; out              ;
+; |CPU|MY_INPUT:inst14|BUS_DATA[7]                                                                    ; |CPU|MY_INPUT:inst14|BUS_DATA[7]                                                              ; out              ;
+; |CPU|GR:inst4|A~0                                                                                   ; |CPU|GR:inst4|A~0                                                                             ; out              ;
+; |CPU|GR:inst4|A~3                                                                                   ; |CPU|GR:inst4|A~3                                                                             ; out              ;
+; |CPU|GR:inst4|A~5                                                                                   ; |CPU|GR:inst4|A~5                                                                             ; out              ;
+; |CPU|GR:inst4|A~6                                                                                   ; |CPU|GR:inst4|A~6                                                                             ; out              ;
+; |CPU|GR:inst4|A[7]                                                                                  ; |CPU|GR:inst4|A[7]                                                                            ; out              ;
+; |CPU|GR:inst4|A[6]                                                                                  ; |CPU|GR:inst4|A[6]                                                                            ; out              ;
+; |CPU|GR:inst4|A[5]                                                                                  ; |CPU|GR:inst4|A[5]                                                                            ; out              ;
+; |CPU|GR:inst4|A[4]                                                                                  ; |CPU|GR:inst4|A[4]                                                                            ; out              ;
+; |CPU|GR:inst4|A[3]                                                                                  ; |CPU|GR:inst4|A[3]                                                                            ; out              ;
+; |CPU|GR:inst4|A[2]                                                                                  ; |CPU|GR:inst4|A[2]                                                                            ; out              ;
+; |CPU|GR:inst4|A[1]                                                                                  ; |CPU|GR:inst4|A[1]                                                                            ; out              ;
+; |CPU|GR:inst4|A[0]                                                                                  ; |CPU|GR:inst4|A[0]                                                                            ; out              ;
+; |CPU|GR:inst4|B~0                                                                                   ; |CPU|GR:inst4|B~0                                                                             ; out              ;
+; |CPU|GR:inst4|B~1                                                                                   ; |CPU|GR:inst4|B~1                                                                             ; out              ;
+; |CPU|GR:inst4|B~2                                                                                   ; |CPU|GR:inst4|B~2                                                                             ; out              ;
+; |CPU|GR:inst4|B~3                                                                                   ; |CPU|GR:inst4|B~3                                                                             ; out              ;
+; |CPU|GR:inst4|B~4                                                                                   ; |CPU|GR:inst4|B~4                                                                             ; out              ;
+; |CPU|GR:inst4|B~5                                                                                   ; |CPU|GR:inst4|B~5                                                                             ; out              ;
+; |CPU|GR:inst4|B~6                                                                                   ; |CPU|GR:inst4|B~6                                                                             ; out              ;
+; |CPU|GR:inst4|B~7                                                                                   ; |CPU|GR:inst4|B~7                                                                             ; out              ;
+; |CPU|GR:inst4|B[7]                                                                                  ; |CPU|GR:inst4|B[7]                                                                            ; out              ;
+; |CPU|GR:inst4|B[6]                                                                                  ; |CPU|GR:inst4|B[6]                                                                            ; out              ;
+; |CPU|GR:inst4|B[5]                                                                                  ; |CPU|GR:inst4|B[5]                                                                            ; out              ;
+; |CPU|GR:inst4|B[4]                                                                                  ; |CPU|GR:inst4|B[4]                                                                            ; out              ;
+; |CPU|GR:inst4|B[3]                                                                                  ; |CPU|GR:inst4|B[3]                                                                            ; out              ;
+; |CPU|GR:inst4|B[2]                                                                                  ; |CPU|GR:inst4|B[2]                                                                            ; out              ;
+; |CPU|GR:inst4|B[1]                                                                                  ; |CPU|GR:inst4|B[1]                                                                            ; out              ;
+; |CPU|GR:inst4|B[0]                                                                                  ; |CPU|GR:inst4|B[0]                                                                            ; out              ;
+; |CPU|GR:inst4|process_0~0                                                                           ; |CPU|GR:inst4|process_0~0                                                                     ; out0             ;
+; |CPU|GR:inst4|IR_A~0                                                                                ; |CPU|GR:inst4|IR_A~0                                                                          ; out              ;
+; |CPU|GR:inst4|IR_A~1                                                                                ; |CPU|GR:inst4|IR_A~1                                                                          ; out              ;
+; |CPU|GR:inst4|IR_A~2                                                                                ; |CPU|GR:inst4|IR_A~2                                                                          ; out              ;
+; |CPU|GR:inst4|IR_A~3                                                                                ; |CPU|GR:inst4|IR_A~3                                                                          ; out              ;
+; |CPU|GR:inst4|IR_A~4                                                                                ; |CPU|GR:inst4|IR_A~4                                                                          ; out              ;
+; |CPU|GR:inst4|IR_A~5                                                                                ; |CPU|GR:inst4|IR_A~5                                                                          ; out              ;
+; |CPU|GR:inst4|IR_A~6                                                                                ; |CPU|GR:inst4|IR_A~6                                                                          ; out              ;
+; |CPU|GR:inst4|IR_A~7                                                                                ; |CPU|GR:inst4|IR_A~7                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~0                                                                                ; |CPU|GR:inst4|IR_B~0                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~1                                                                                ; |CPU|GR:inst4|IR_B~1                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~2                                                                                ; |CPU|GR:inst4|IR_B~2                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~3                                                                                ; |CPU|GR:inst4|IR_B~3                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~4                                                                                ; |CPU|GR:inst4|IR_B~4                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~5                                                                                ; |CPU|GR:inst4|IR_B~5                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~6                                                                                ; |CPU|GR:inst4|IR_B~6                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~7                                                                                ; |CPU|GR:inst4|IR_B~7                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~8                                                                                ; |CPU|GR:inst4|IR_B~8                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~9                                                                                ; |CPU|GR:inst4|IR_B~9                                                                          ; out              ;
+; |CPU|GR:inst4|IR_B~10                                                                               ; |CPU|GR:inst4|IR_B~10                                                                         ; out              ;
+; |CPU|GR:inst4|IR_B~11                                                                               ; |CPU|GR:inst4|IR_B~11                                                                         ; out              ;
+; |CPU|GR:inst4|IR_B~12                                                                               ; |CPU|GR:inst4|IR_B~12                                                                         ; out              ;
+; |CPU|GR:inst4|IR_B~13                                                                               ; |CPU|GR:inst4|IR_B~13                                                                         ; out              ;
+; |CPU|GR:inst4|IR_B~14                                                                               ; |CPU|GR:inst4|IR_B~14                                                                         ; out              ;
+; |CPU|GR:inst4|IR_B~15                                                                               ; |CPU|GR:inst4|IR_B~15                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~0                                                                                ; |CPU|GR:inst4|IR_C~0                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~1                                                                                ; |CPU|GR:inst4|IR_C~1                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~2                                                                                ; |CPU|GR:inst4|IR_C~2                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~3                                                                                ; |CPU|GR:inst4|IR_C~3                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~4                                                                                ; |CPU|GR:inst4|IR_C~4                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~5                                                                                ; |CPU|GR:inst4|IR_C~5                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~6                                                                                ; |CPU|GR:inst4|IR_C~6                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~7                                                                                ; |CPU|GR:inst4|IR_C~7                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~8                                                                                ; |CPU|GR:inst4|IR_C~8                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~9                                                                                ; |CPU|GR:inst4|IR_C~9                                                                          ; out              ;
+; |CPU|GR:inst4|IR_C~10                                                                               ; |CPU|GR:inst4|IR_C~10                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~11                                                                               ; |CPU|GR:inst4|IR_C~11                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~12                                                                               ; |CPU|GR:inst4|IR_C~12                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~13                                                                               ; |CPU|GR:inst4|IR_C~13                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~14                                                                               ; |CPU|GR:inst4|IR_C~14                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~15                                                                               ; |CPU|GR:inst4|IR_C~15                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~16                                                                               ; |CPU|GR:inst4|IR_C~16                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~17                                                                               ; |CPU|GR:inst4|IR_C~17                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~18                                                                               ; |CPU|GR:inst4|IR_C~18                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~19                                                                               ; |CPU|GR:inst4|IR_C~19                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~20                                                                               ; |CPU|GR:inst4|IR_C~20                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~21                                                                               ; |CPU|GR:inst4|IR_C~21                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~22                                                                               ; |CPU|GR:inst4|IR_C~22                                                                         ; out              ;
+; |CPU|GR:inst4|IR_C~23                                                                               ; |CPU|GR:inst4|IR_C~23                                                                         ; out              ;
+; |CPU|GR:inst4|IR_B[0]                                                                               ; |CPU|GR:inst4|IR_B[0]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_B[3]                                                                               ; |CPU|GR:inst4|IR_B[3]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_B[5]                                                                               ; |CPU|GR:inst4|IR_B[5]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_B[6]                                                                               ; |CPU|GR:inst4|IR_B[6]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_B[7]                                                                               ; |CPU|GR:inst4|IR_B[7]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_A[0]                                                                               ; |CPU|GR:inst4|IR_A[0]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_A[1]                                                                               ; |CPU|GR:inst4|IR_A[1]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_A[2]                                                                               ; |CPU|GR:inst4|IR_A[2]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_A[3]                                                                               ; |CPU|GR:inst4|IR_A[3]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_A[4]                                                                               ; |CPU|GR:inst4|IR_A[4]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_A[5]                                                                               ; |CPU|GR:inst4|IR_A[5]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_A[6]                                                                               ; |CPU|GR:inst4|IR_A[6]                                                                         ; regout           ;
+; |CPU|GR:inst4|IR_A[7]                                                                               ; |CPU|GR:inst4|IR_A[7]                                                                         ; regout           ;
+; |CPU|ALU:inst|C~0                                                                                   ; |CPU|ALU:inst|C~0                                                                             ; out              ;
+; |CPU|ALU:inst|Z_EN                                                                                  ; |CPU|ALU:inst|Z_EN                                                                            ; out0             ;
+; |CPU|ALU:inst|C~1                                                                                   ; |CPU|ALU:inst|C~1                                                                             ; out              ;
+; |CPU|ALU:inst|ALU_TMP~50                                                                            ; |CPU|ALU:inst|ALU_TMP~50                                                                      ; out0             ;
+; |CPU|ALU:inst|ALU_TMP~51                                                                            ; |CPU|ALU:inst|ALU_TMP~51                                                                      ; out0             ;
+; |CPU|ALU:inst|ALU_TMP~52                                                                            ; |CPU|ALU:inst|ALU_TMP~52                                                                      ; out0             ;
+; |CPU|ALU:inst|ALU_TMP~53                                                                            ; |CPU|ALU:inst|ALU_TMP~53                                                                      ; out0             ;
+; |CPU|ALU:inst|ALU_TMP~54                                                                            ; |CPU|ALU:inst|ALU_TMP~54                                                                      ; out0             ;
+; |CPU|ALU:inst|ALU_TMP~55                                                                            ; |CPU|ALU:inst|ALU_TMP~55                                                                      ; out0             ;
+; |CPU|ALU:inst|ALU_TMP~56                                                                            ; |CPU|ALU:inst|ALU_TMP~56                                                                      ; out0             ;
+; |CPU|ALU:inst|ALU_TMP~57                                                                            ; |CPU|ALU:inst|ALU_TMP~57                                                                      ; out0             ;
+; |CPU|ALU:inst|ALU_OUT[0]~0                                                                          ; |CPU|ALU:inst|ALU_OUT[0]~0                                                                    ; out              ;
+; |CPU|ALU:inst|C_EN~0                                                                                ; |CPU|ALU:inst|C_EN~0                                                                          ; out              ;
+; |CPU|ALU:inst|process_0~1                                                                           ; |CPU|ALU:inst|process_0~1                                                                     ; out0             ;
+; |CPU|ALU:inst|C                                                                                     ; |CPU|ALU:inst|C                                                                               ; out              ;
+; |CPU|ALU:inst|C_EN~1                                                                                ; |CPU|ALU:inst|C_EN~1                                                                          ; out              ;
+; |CPU|ALU:inst|C_EN~2                                                                                ; |CPU|ALU:inst|C_EN~2                                                                          ; out              ;
+; |CPU|ALU:inst|C_EN~3                                                                                ; |CPU|ALU:inst|C_EN~3                                                                          ; out              ;
+; |CPU|ALU:inst|C_EN~4                                                                                ; |CPU|ALU:inst|C_EN~4                                                                          ; out              ;
+; |CPU|ALU:inst|C_EN                                                                                  ; |CPU|ALU:inst|C_EN                                                                            ; out              ;
+; |CPU|ALU:inst|ALU_OUT[7]~1                                                                          ; |CPU|ALU:inst|ALU_OUT[7]~1                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_OUT[6]~2                                                                          ; |CPU|ALU:inst|ALU_OUT[6]~2                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_OUT[5]~3                                                                          ; |CPU|ALU:inst|ALU_OUT[5]~3                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_OUT[4]~4                                                                          ; |CPU|ALU:inst|ALU_OUT[4]~4                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_OUT[3]~5                                                                          ; |CPU|ALU:inst|ALU_OUT[3]~5                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_OUT[2]~6                                                                          ; |CPU|ALU:inst|ALU_OUT[2]~6                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_OUT[1]~7                                                                          ; |CPU|ALU:inst|ALU_OUT[1]~7                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_OUT[7]~8                                                                          ; |CPU|ALU:inst|ALU_OUT[7]~8                                                                    ; out0             ;
+; |CPU|ALU:inst|ALU_OUT[7]~9                                                                          ; |CPU|ALU:inst|ALU_OUT[7]~9                                                                    ; out0             ;
+; |CPU|ALU:inst|ALU_TMP[7]~0                                                                          ; |CPU|ALU:inst|ALU_TMP[7]~0                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_TMP[6]~1                                                                          ; |CPU|ALU:inst|ALU_TMP[6]~1                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_TMP[5]~2                                                                          ; |CPU|ALU:inst|ALU_TMP[5]~2                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_TMP[4]~3                                                                          ; |CPU|ALU:inst|ALU_TMP[4]~3                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_TMP[3]~4                                                                          ; |CPU|ALU:inst|ALU_TMP[3]~4                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_TMP[2]~5                                                                          ; |CPU|ALU:inst|ALU_TMP[2]~5                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_TMP[1]~6                                                                          ; |CPU|ALU:inst|ALU_TMP[1]~6                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_TMP[0]~7                                                                          ; |CPU|ALU:inst|ALU_TMP[0]~7                                                                    ; out0             ;
+; |CPU|ALU:inst|C~2                                                                                   ; |CPU|ALU:inst|C~2                                                                             ; out              ;
+; |CPU|ALU:inst|C~3                                                                                   ; |CPU|ALU:inst|C~3                                                                             ; out0             ;
+; |CPU|ALU:inst|C~4                                                                                   ; |CPU|ALU:inst|C~4                                                                             ; out              ;
+; |CPU|ALU:inst|ALU_TMP[0]                                                                            ; |CPU|ALU:inst|ALU_TMP[0]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_TMP[0]~8                                                                          ; |CPU|ALU:inst|ALU_TMP[0]~8                                                                    ; out              ;
+; |CPU|ALU:inst|ALU_TMP[0]~9                                                                          ; |CPU|ALU:inst|ALU_TMP[0]~9                                                                    ; out0             ;
+; |CPU|ALU:inst|ALU_TMP[0]~10                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~10                                                                   ; out0             ;
+; |CPU|ALU:inst|ALU_TMP[0]~11                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~11                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[0]~12                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~12                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[0]~13                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~13                                                                   ; out0             ;
+; |CPU|ALU:inst|ALU_TMP[0]~14                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~14                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[0]~15                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~15                                                                   ; out0             ;
+; |CPU|ALU:inst|ALU_TMP[0]~16                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~16                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[0]~17                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~17                                                                   ; out0             ;
+; |CPU|ALU:inst|ALU_TMP[0]~18                                                                         ; |CPU|ALU:inst|ALU_TMP[0]~18                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[1]                                                                            ; |CPU|ALU:inst|ALU_TMP[1]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_TMP[1]~19                                                                         ; |CPU|ALU:inst|ALU_TMP[1]~19                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[1]~20                                                                         ; |CPU|ALU:inst|ALU_TMP[1]~20                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[1]~21                                                                         ; |CPU|ALU:inst|ALU_TMP[1]~21                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[1]~22                                                                         ; |CPU|ALU:inst|ALU_TMP[1]~22                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[2]                                                                            ; |CPU|ALU:inst|ALU_TMP[2]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_TMP[2]~23                                                                         ; |CPU|ALU:inst|ALU_TMP[2]~23                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[2]~24                                                                         ; |CPU|ALU:inst|ALU_TMP[2]~24                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[2]~25                                                                         ; |CPU|ALU:inst|ALU_TMP[2]~25                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[2]~26                                                                         ; |CPU|ALU:inst|ALU_TMP[2]~26                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[3]                                                                            ; |CPU|ALU:inst|ALU_TMP[3]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_TMP[3]~27                                                                         ; |CPU|ALU:inst|ALU_TMP[3]~27                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[3]~28                                                                         ; |CPU|ALU:inst|ALU_TMP[3]~28                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[3]~29                                                                         ; |CPU|ALU:inst|ALU_TMP[3]~29                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[3]~30                                                                         ; |CPU|ALU:inst|ALU_TMP[3]~30                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[4]                                                                            ; |CPU|ALU:inst|ALU_TMP[4]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_TMP[4]~31                                                                         ; |CPU|ALU:inst|ALU_TMP[4]~31                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[4]~32                                                                         ; |CPU|ALU:inst|ALU_TMP[4]~32                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[4]~33                                                                         ; |CPU|ALU:inst|ALU_TMP[4]~33                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[4]~34                                                                         ; |CPU|ALU:inst|ALU_TMP[4]~34                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[5]                                                                            ; |CPU|ALU:inst|ALU_TMP[5]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_TMP[5]~35                                                                         ; |CPU|ALU:inst|ALU_TMP[5]~35                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[5]~36                                                                         ; |CPU|ALU:inst|ALU_TMP[5]~36                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[5]~37                                                                         ; |CPU|ALU:inst|ALU_TMP[5]~37                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[5]~38                                                                         ; |CPU|ALU:inst|ALU_TMP[5]~38                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[6]                                                                            ; |CPU|ALU:inst|ALU_TMP[6]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_TMP[6]~39                                                                         ; |CPU|ALU:inst|ALU_TMP[6]~39                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[6]~40                                                                         ; |CPU|ALU:inst|ALU_TMP[6]~40                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[6]~41                                                                         ; |CPU|ALU:inst|ALU_TMP[6]~41                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[6]~42                                                                         ; |CPU|ALU:inst|ALU_TMP[6]~42                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[7]                                                                            ; |CPU|ALU:inst|ALU_TMP[7]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_TMP[7]~43                                                                         ; |CPU|ALU:inst|ALU_TMP[7]~43                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[7]~44                                                                         ; |CPU|ALU:inst|ALU_TMP[7]~44                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[7]~45                                                                         ; |CPU|ALU:inst|ALU_TMP[7]~45                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_TMP[7]~46                                                                         ; |CPU|ALU:inst|ALU_TMP[7]~46                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[0]~10                                                                         ; |CPU|ALU:inst|ALU_OUT[0]~10                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[0]                                                                            ; |CPU|ALU:inst|ALU_OUT[0]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_OUT[1]~12                                                                         ; |CPU|ALU:inst|ALU_OUT[1]~12                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[1]                                                                            ; |CPU|ALU:inst|ALU_OUT[1]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_OUT[2]~14                                                                         ; |CPU|ALU:inst|ALU_OUT[2]~14                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[2]                                                                            ; |CPU|ALU:inst|ALU_OUT[2]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_OUT[3]~16                                                                         ; |CPU|ALU:inst|ALU_OUT[3]~16                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[3]                                                                            ; |CPU|ALU:inst|ALU_OUT[3]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_OUT[4]~18                                                                         ; |CPU|ALU:inst|ALU_OUT[4]~18                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[4]                                                                            ; |CPU|ALU:inst|ALU_OUT[4]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_OUT[5]~20                                                                         ; |CPU|ALU:inst|ALU_OUT[5]~20                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[5]                                                                            ; |CPU|ALU:inst|ALU_OUT[5]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_OUT[6]~22                                                                         ; |CPU|ALU:inst|ALU_OUT[6]~22                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[6]                                                                            ; |CPU|ALU:inst|ALU_OUT[6]                                                                      ; out              ;
+; |CPU|ALU:inst|ALU_OUT[7]~24                                                                         ; |CPU|ALU:inst|ALU_OUT[7]~24                                                                   ; out0             ;
+; |CPU|ALU:inst|ALU_OUT[7]~25                                                                         ; |CPU|ALU:inst|ALU_OUT[7]~25                                                                   ; out0             ;
+; |CPU|ALU:inst|Z                                                                                     ; |CPU|ALU:inst|Z                                                                               ; out              ;
+; |CPU|ALU:inst|ALU_OUT[7]~26                                                                         ; |CPU|ALU:inst|ALU_OUT[7]~26                                                                   ; out0             ;
+; |CPU|ALU:inst|ALU_OUT[7]~27                                                                         ; |CPU|ALU:inst|ALU_OUT[7]~27                                                                   ; out              ;
+; |CPU|ALU:inst|ALU_OUT[7]~28                                                                         ; |CPU|ALU:inst|ALU_OUT[7]~28                                                                   ; out0             ;
+; |CPU|ALU:inst|ALU_OUT[7]                                                                            ; |CPU|ALU:inst|ALU_OUT[7]                                                                      ; out              ;
+; |CPU|IR:inst18|DATA[0]                                                                              ; |CPU|IR:inst18|DATA[0]                                                                        ; regout           ;
+; |CPU|IR:inst18|DATA[1]                                                                              ; |CPU|IR:inst18|DATA[1]                                                                        ; regout           ;
+; |CPU|IR:inst18|DATA[2]                                                                              ; |CPU|IR:inst18|DATA[2]                                                                        ; regout           ;
+; |CPU|IR:inst18|DATA[3]                                                                              ; |CPU|IR:inst18|DATA[3]                                                                        ; regout           ;
+; |CPU|IR:inst18|DATA[4]                                                                              ; |CPU|IR:inst18|DATA[4]                                                                        ; regout           ;
+; |CPU|IR:inst18|DATA[5]                                                                              ; |CPU|IR:inst18|DATA[5]                                                                        ; regout           ;
+; |CPU|IR:inst18|DATA[6]                                                                              ; |CPU|IR:inst18|DATA[6]                                                                        ; regout           ;
+; |CPU|IR:inst18|DATA[7]                                                                              ; |CPU|IR:inst18|DATA[7]                                                                        ; regout           ;
+; |CPU|ID:inst3|MOVA~0                                                                                ; |CPU|ID:inst3|MOVA~0                                                                          ; out0             ;
+; |CPU|ID:inst3|MOVA~1                                                                                ; |CPU|ID:inst3|MOVA~1                                                                          ; out0             ;
+; |CPU|ID:inst3|MOVA                                                                                  ; |CPU|ID:inst3|MOVA                                                                            ; out0             ;
+; |CPU|ID:inst3|MOVB~0                                                                                ; |CPU|ID:inst3|MOVB~0                                                                          ; out0             ;
+; |CPU|ID:inst3|MOVB~1                                                                                ; |CPU|ID:inst3|MOVB~1                                                                          ; out0             ;
+; |CPU|ID:inst3|MOVB                                                                                  ; |CPU|ID:inst3|MOVB                                                                            ; out0             ;
+; |CPU|ID:inst3|MOVC~0                                                                                ; |CPU|ID:inst3|MOVC~0                                                                          ; out0             ;
+; |CPU|ID:inst3|MOVC                                                                                  ; |CPU|ID:inst3|MOVC                                                                            ; out0             ;
+; |CPU|ID:inst3|ALU~0                                                                                 ; |CPU|ID:inst3|ALU~0                                                                           ; out0             ;
+; |CPU|ID:inst3|ALU~1                                                                                 ; |CPU|ID:inst3|ALU~1                                                                           ; out0             ;
+; |CPU|ID:inst3|ALU                                                                                   ; |CPU|ID:inst3|ALU                                                                             ; out0             ;
+; |CPU|ID:inst3|NOT0                                                                                  ; |CPU|ID:inst3|NOT0                                                                            ; out0             ;
+; |CPU|ID:inst3|RSL~0                                                                                 ; |CPU|ID:inst3|RSL~0                                                                           ; out0             ;
+; |CPU|ID:inst3|RSL                                                                                   ; |CPU|ID:inst3|RSL                                                                             ; out0             ;
+; |CPU|ID:inst3|RSR~0                                                                                 ; |CPU|ID:inst3|RSR~0                                                                           ; out0             ;
+; |CPU|ID:inst3|RSR                                                                                   ; |CPU|ID:inst3|RSR                                                                             ; out0             ;
+; |CPU|ID:inst3|JMP~0                                                                                 ; |CPU|ID:inst3|JMP~0                                                                           ; out0             ;
+; |CPU|ID:inst3|JMP~1                                                                                 ; |CPU|ID:inst3|JMP~1                                                                           ; out0             ;
+; |CPU|ID:inst3|JMP                                                                                   ; |CPU|ID:inst3|JMP                                                                             ; out0             ;
+; |CPU|ID:inst3|JZ~0                                                                                  ; |CPU|ID:inst3|JZ~0                                                                            ; out0             ;
+; |CPU|ID:inst3|JZ                                                                                    ; |CPU|ID:inst3|JZ                                                                              ; out0             ;
+; |CPU|ID:inst3|JC~0                                                                                  ; |CPU|ID:inst3|JC~0                                                                            ; out0             ;
+; |CPU|ID:inst3|JC                                                                                    ; |CPU|ID:inst3|JC                                                                              ; out0             ;
+; |CPU|ID:inst3|IN0                                                                                   ; |CPU|ID:inst3|IN0                                                                             ; out0             ;
+; |CPU|ID:inst3|OUT0                                                                                  ; |CPU|ID:inst3|OUT0                                                                            ; out0             ;
+; |CPU|ID:inst3|NOP~0                                                                                 ; |CPU|ID:inst3|NOP~0                                                                           ; out0             ;
+; |CPU|ID:inst3|NOP~1                                                                                 ; |CPU|ID:inst3|NOP~1                                                                           ; out0             ;
+; |CPU|ID:inst3|NOP                                                                                   ; |CPU|ID:inst3|NOP                                                                             ; out0             ;
+; |CPU|CONTROLLER:inst1|INPC~1                                                                        ; |CPU|CONTROLLER:inst1|INPC~1                                                                  ; out0             ;
+; |CPU|CONTROLLER:inst1|INPC                                                                          ; |CPU|CONTROLLER:inst1|INPC                                                                    ; out0             ;
+; |CPU|CONTROLLER:inst1|LDPC~0                                                                        ; |CPU|CONTROLLER:inst1|LDPC~0                                                                  ; out0             ;
+; |CPU|CONTROLLER:inst1|LDPC~1                                                                        ; |CPU|CONTROLLER:inst1|LDPC~1                                                                  ; out0             ;
+; |CPU|CONTROLLER:inst1|LDPC~2                                                                        ; |CPU|CONTROLLER:inst1|LDPC~2                                                                  ; out0             ;
+; |CPU|CONTROLLER:inst1|LDPC~3                                                                        ; |CPU|CONTROLLER:inst1|LDPC~3                                                                  ; out0             ;
+; |CPU|CONTROLLER:inst1|LDPC                                                                          ; |CPU|CONTROLLER:inst1|LDPC                                                                    ; out0             ;
+; |CPU|CONTROLLER:inst1|WE_GR~0                                                                       ; |CPU|CONTROLLER:inst1|WE_GR~0                                                                 ; out0             ;
+; |CPU|CONTROLLER:inst1|WE_GR~1                                                                       ; |CPU|CONTROLLER:inst1|WE_GR~1                                                                 ; out0             ;
+; |CPU|CONTROLLER:inst1|WE_GR~2                                                                       ; |CPU|CONTROLLER:inst1|WE_GR~2                                                                 ; out0             ;
+; |CPU|CONTROLLER:inst1|WE_GR~3                                                                       ; |CPU|CONTROLLER:inst1|WE_GR~3                                                                 ; out0             ;
+; |CPU|CONTROLLER:inst1|WE_GR~4                                                                       ; |CPU|CONTROLLER:inst1|WE_GR~4                                                                 ; out0             ;
+; |CPU|CONTROLLER:inst1|WE_GR~5                                                                       ; |CPU|CONTROLLER:inst1|WE_GR~5                                                                 ; out0             ;
+; |CPU|CONTROLLER:inst1|WE_GR~6                                                                       ; |CPU|CONTROLLER:inst1|WE_GR~6                                                                 ; out0             ;
+; |CPU|CONTROLLER:inst1|F~0                                                                           ; |CPU|CONTROLLER:inst1|F~0                                                                     ; out0             ;
+; |CPU|CONTROLLER:inst1|F~1                                                                           ; |CPU|CONTROLLER:inst1|F~1                                                                     ; out0             ;
+; |CPU|CONTROLLER:inst1|F~2                                                                           ; |CPU|CONTROLLER:inst1|F~2                                                                     ; out0             ;
+; |CPU|CONTROLLER:inst1|F                                                                             ; |CPU|CONTROLLER:inst1|F                                                                       ; out0             ;
+; |CPU|CONTROLLER:inst1|DL~0                                                                          ; |CPU|CONTROLLER:inst1|DL~0                                                                    ; out0             ;
+; |CPU|CONTROLLER:inst1|DL~1                                                                          ; |CPU|CONTROLLER:inst1|DL~1                                                                    ; out0             ;
+; |CPU|CONTROLLER:inst1|DL~2                                                                          ; |CPU|CONTROLLER:inst1|DL~2                                                                    ; out0             ;
+; |CPU|CONTROLLER:inst1|DL                                                                            ; |CPU|CONTROLLER:inst1|DL                                                                      ; out0             ;
+; |CPU|CONTROLLER:inst1|XL                                                                            ; |CPU|CONTROLLER:inst1|XL                                                                      ; out0             ;
+; |CPU|CONTROLLER:inst1|M                                                                             ; |CPU|CONTROLLER:inst1|M                                                                       ; out0             ;
+; |CPU|CONTROLLER:inst1|MADD[0]                                                                       ; |CPU|CONTROLLER:inst1|MADD[0]                                                                 ; out0             ;
+; |CPU|CONTROLLER:inst1|MADD[1]                                                                       ; |CPU|CONTROLLER:inst1|MADD[1]                                                                 ; out              ;
+; |CPU|SM_GENERATOR:inst10|TMP                                                                        ; |CPU|SM_GENERATOR:inst10|TMP                                                                  ; regout           ;
+; |CPU|ALU:inst|LessThan0~0                                                                           ; |CPU|ALU:inst|LessThan0~0                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~1                                                                           ; |CPU|ALU:inst|LessThan0~1                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~2                                                                           ; |CPU|ALU:inst|LessThan0~2                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~3                                                                           ; |CPU|ALU:inst|LessThan0~3                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~4                                                                           ; |CPU|ALU:inst|LessThan0~4                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~5                                                                           ; |CPU|ALU:inst|LessThan0~5                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~6                                                                           ; |CPU|ALU:inst|LessThan0~6                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~7                                                                           ; |CPU|ALU:inst|LessThan0~7                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~8                                                                           ; |CPU|ALU:inst|LessThan0~8                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~9                                                                           ; |CPU|ALU:inst|LessThan0~9                                                                     ; out0             ;
+; |CPU|ALU:inst|LessThan0~10                                                                          ; |CPU|ALU:inst|LessThan0~10                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~11                                                                          ; |CPU|ALU:inst|LessThan0~11                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~12                                                                          ; |CPU|ALU:inst|LessThan0~12                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~13                                                                          ; |CPU|ALU:inst|LessThan0~13                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~14                                                                          ; |CPU|ALU:inst|LessThan0~14                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~15                                                                          ; |CPU|ALU:inst|LessThan0~15                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~16                                                                          ; |CPU|ALU:inst|LessThan0~16                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~17                                                                          ; |CPU|ALU:inst|LessThan0~17                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~18                                                                          ; |CPU|ALU:inst|LessThan0~18                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~19                                                                          ; |CPU|ALU:inst|LessThan0~19                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~20                                                                          ; |CPU|ALU:inst|LessThan0~20                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~21                                                                          ; |CPU|ALU:inst|LessThan0~21                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~22                                                                          ; |CPU|ALU:inst|LessThan0~22                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~23                                                                          ; |CPU|ALU:inst|LessThan0~23                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~24                                                                          ; |CPU|ALU:inst|LessThan0~24                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~25                                                                          ; |CPU|ALU:inst|LessThan0~25                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~26                                                                          ; |CPU|ALU:inst|LessThan0~26                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~27                                                                          ; |CPU|ALU:inst|LessThan0~27                                                                    ; out0             ;
+; |CPU|ALU:inst|LessThan0~28                                                                          ; |CPU|ALU:inst|LessThan0~28                                                                    ; out0             ;
+; |CPU|PC:inst9|Add0~0                                                                                ; |CPU|PC:inst9|Add0~0                                                                          ; out0             ;
+; |CPU|PC:inst9|Add0~1                                                                                ; |CPU|PC:inst9|Add0~1                                                                          ; out0             ;
+; |CPU|PC:inst9|Add0~2                                                                                ; |CPU|PC:inst9|Add0~2                                                                          ; out0             ;
+; |CPU|PC:inst9|Add0~3                                                                                ; |CPU|PC:inst9|Add0~3                                                                          ; out0             ;
+; |CPU|PC:inst9|Add0~4                                                                                ; |CPU|PC:inst9|Add0~4                                                                          ; out0             ;
+; |CPU|PC:inst9|Add0~8                                                                                ; |CPU|PC:inst9|Add0~8                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~0                                                                                ; |CPU|ALU:inst|Add0~0                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~1                                                                                ; |CPU|ALU:inst|Add0~1                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~2                                                                                ; |CPU|ALU:inst|Add0~2                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~3                                                                                ; |CPU|ALU:inst|Add0~3                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~5                                                                                ; |CPU|ALU:inst|Add0~5                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~7                                                                                ; |CPU|ALU:inst|Add0~7                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~8                                                                                ; |CPU|ALU:inst|Add0~8                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~9                                                                                ; |CPU|ALU:inst|Add0~9                                                                          ; out0             ;
+; |CPU|ALU:inst|Add0~10                                                                               ; |CPU|ALU:inst|Add0~10                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~11                                                                               ; |CPU|ALU:inst|Add0~11                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~12                                                                               ; |CPU|ALU:inst|Add0~12                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~13                                                                               ; |CPU|ALU:inst|Add0~13                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~14                                                                               ; |CPU|ALU:inst|Add0~14                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~15                                                                               ; |CPU|ALU:inst|Add0~15                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~16                                                                               ; |CPU|ALU:inst|Add0~16                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~17                                                                               ; |CPU|ALU:inst|Add0~17                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~18                                                                               ; |CPU|ALU:inst|Add0~18                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~19                                                                               ; |CPU|ALU:inst|Add0~19                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~20                                                                               ; |CPU|ALU:inst|Add0~20                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~21                                                                               ; |CPU|ALU:inst|Add0~21                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~22                                                                               ; |CPU|ALU:inst|Add0~22                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~23                                                                               ; |CPU|ALU:inst|Add0~23                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~24                                                                               ; |CPU|ALU:inst|Add0~24                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~25                                                                               ; |CPU|ALU:inst|Add0~25                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~26                                                                               ; |CPU|ALU:inst|Add0~26                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~27                                                                               ; |CPU|ALU:inst|Add0~27                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~28                                                                               ; |CPU|ALU:inst|Add0~28                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~29                                                                               ; |CPU|ALU:inst|Add0~29                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~30                                                                               ; |CPU|ALU:inst|Add0~30                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~31                                                                               ; |CPU|ALU:inst|Add0~31                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~32                                                                               ; |CPU|ALU:inst|Add0~32                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~33                                                                               ; |CPU|ALU:inst|Add0~33                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~34                                                                               ; |CPU|ALU:inst|Add0~34                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~35                                                                               ; |CPU|ALU:inst|Add0~35                                                                         ; out0             ;
+; |CPU|ALU:inst|Add0~36                                                                               ; |CPU|ALU:inst|Add0~36                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~0                                                                                ; |CPU|ALU:inst|Add1~0                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~1                                                                                ; |CPU|ALU:inst|Add1~1                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~2                                                                                ; |CPU|ALU:inst|Add1~2                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~3                                                                                ; |CPU|ALU:inst|Add1~3                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~4                                                                                ; |CPU|ALU:inst|Add1~4                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~5                                                                                ; |CPU|ALU:inst|Add1~5                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~6                                                                                ; |CPU|ALU:inst|Add1~6                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~7                                                                                ; |CPU|ALU:inst|Add1~7                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~8                                                                                ; |CPU|ALU:inst|Add1~8                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~9                                                                                ; |CPU|ALU:inst|Add1~9                                                                          ; out0             ;
+; |CPU|ALU:inst|Add1~10                                                                               ; |CPU|ALU:inst|Add1~10                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~11                                                                               ; |CPU|ALU:inst|Add1~11                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~12                                                                               ; |CPU|ALU:inst|Add1~12                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~13                                                                               ; |CPU|ALU:inst|Add1~13                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~14                                                                               ; |CPU|ALU:inst|Add1~14                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~15                                                                               ; |CPU|ALU:inst|Add1~15                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~16                                                                               ; |CPU|ALU:inst|Add1~16                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~17                                                                               ; |CPU|ALU:inst|Add1~17                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~18                                                                               ; |CPU|ALU:inst|Add1~18                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~19                                                                               ; |CPU|ALU:inst|Add1~19                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~20                                                                               ; |CPU|ALU:inst|Add1~20                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~21                                                                               ; |CPU|ALU:inst|Add1~21                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~22                                                                               ; |CPU|ALU:inst|Add1~22                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~23                                                                               ; |CPU|ALU:inst|Add1~23                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~24                                                                               ; |CPU|ALU:inst|Add1~24                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~25                                                                               ; |CPU|ALU:inst|Add1~25                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~26                                                                               ; |CPU|ALU:inst|Add1~26                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~27                                                                               ; |CPU|ALU:inst|Add1~27                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~28                                                                               ; |CPU|ALU:inst|Add1~28                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~29                                                                               ; |CPU|ALU:inst|Add1~29                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~30                                                                               ; |CPU|ALU:inst|Add1~30                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~31                                                                               ; |CPU|ALU:inst|Add1~31                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~32                                                                               ; |CPU|ALU:inst|Add1~32                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~33                                                                               ; |CPU|ALU:inst|Add1~33                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~34                                                                               ; |CPU|ALU:inst|Add1~34                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~35                                                                               ; |CPU|ALU:inst|Add1~35                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~36                                                                               ; |CPU|ALU:inst|Add1~36                                                                         ; out0             ;
+; |CPU|ALU:inst|Add1~37                                                                               ; |CPU|ALU:inst|Add1~37                                                                         ; out0             ;
+; |CPU|MUX_3:inst8|Equal0~0                                                                           ; |CPU|MUX_3:inst8|Equal0~0                                                                     ; out0             ;
+; |CPU|MUX_3:inst8|Equal1~0                                                                           ; |CPU|MUX_3:inst8|Equal1~0                                                                     ; out0             ;
+; |CPU|MUX_3:inst8|Equal2~0                                                                           ; |CPU|MUX_3:inst8|Equal2~0                                                                     ; out0             ;
+; |CPU|GR:inst4|Equal0~0                                                                              ; |CPU|GR:inst4|Equal0~0                                                                        ; out0             ;
+; |CPU|GR:inst4|Equal1~0                                                                              ; |CPU|GR:inst4|Equal1~0                                                                        ; out0             ;
+; |CPU|GR:inst4|Equal2~0                                                                              ; |CPU|GR:inst4|Equal2~0                                                                        ; out0             ;
+; |CPU|GR:inst4|Equal3~0                                                                              ; |CPU|GR:inst4|Equal3~0                                                                        ; out0             ;
+; |CPU|GR:inst4|Equal4~0                                                                              ; |CPU|GR:inst4|Equal4~0                                                                        ; out0             ;
+; |CPU|GR:inst4|Equal5~0                                                                              ; |CPU|GR:inst4|Equal5~0                                                                        ; out0             ;
+; |CPU|ALU:inst|Equal0~0                                                                              ; |CPU|ALU:inst|Equal0~0                                                                        ; out0             ;
+; |CPU|ALU:inst|Equal1~0                                                                              ; |CPU|ALU:inst|Equal1~0                                                                        ; out0             ;
+; |CPU|ALU:inst|Equal2~0                                                                              ; |CPU|ALU:inst|Equal2~0                                                                        ; out0             ;
+; |CPU|ALU:inst|Equal3~0                                                                              ; |CPU|ALU:inst|Equal3~0                                                                        ; out0             ;
+; |CPU|ALU:inst|Equal4~0                                                                              ; |CPU|ALU:inst|Equal4~0                                                                        ; out0             ;
+; |CPU|ALU:inst|Equal5~0                                                                              ; |CPU|ALU:inst|Equal5~0                                                                        ; out0             ;
+; |CPU|ALU:inst|Equal6~0                                                                              ; |CPU|ALU:inst|Equal6~0                                                                        ; out0             ;
+; |CPU|ALU:inst|Equal7~0                                                                              ; |CPU|ALU:inst|Equal7~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal0~0                                                                              ; |CPU|ID:inst3|Equal0~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal1~0                                                                              ; |CPU|ID:inst3|Equal1~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal2~0                                                                              ; |CPU|ID:inst3|Equal2~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal3~0                                                                              ; |CPU|ID:inst3|Equal3~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal4~0                                                                              ; |CPU|ID:inst3|Equal4~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal5~0                                                                              ; |CPU|ID:inst3|Equal5~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal6~0                                                                              ; |CPU|ID:inst3|Equal6~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal7~0                                                                              ; |CPU|ID:inst3|Equal7~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal8~0                                                                              ; |CPU|ID:inst3|Equal8~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal9~0                                                                              ; |CPU|ID:inst3|Equal9~0                                                                        ; out0             ;
+; |CPU|ID:inst3|Equal10~0                                                                             ; |CPU|ID:inst3|Equal10~0                                                                       ; out0             ;
+; |CPU|ID:inst3|Equal11~0                                                                             ; |CPU|ID:inst3|Equal11~0                                                                       ; out0             ;
+; |CPU|ID:inst3|Equal12~0                                                                             ; |CPU|ID:inst3|Equal12~0                                                                       ; out0             ;
+; |CPU|ID:inst3|Equal13~0                                                                             ; |CPU|ID:inst3|Equal13~0                                                                       ; out0             ;
+; |CPU|ID:inst3|Equal14~0                                                                             ; |CPU|ID:inst3|Equal14~0                                                                       ; out0             ;
+; |CPU|ID:inst3|Equal15~0                                                                             ; |CPU|ID:inst3|Equal15~0                                                                       ; out0             ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                       ;
++--------------------------------------+--------------------------------------+------------------+
+; Node Name                            ; Output Port Name                     ; Output Port Type ;
++--------------------------------------+--------------------------------------+------------------+
+; |CPU|EN_SM                           ; |CPU|EN_SM                           ; pin_out          ;
+; |CPU|INPUT[5]                        ; |CPU|INPUT[5]                        ; out              ;
+; |CPU|INPUT[4]                        ; |CPU|INPUT[4]                        ; out              ;
+; |CPU|INPUT[1]                        ; |CPU|INPUT[1]                        ; out              ;
+; |CPU|INPUT[0]                        ; |CPU|INPUT[0]                        ; out              ;
+; |CPU|PC_ADD[7]                       ; |CPU|PC_ADD[7]                       ; pin_out          ;
+; |CPU|PC_ADD[4]                       ; |CPU|PC_ADD[4]                       ; pin_out          ;
+; |CPU|PC_ADD[3]                       ; |CPU|PC_ADD[3]                       ; pin_out          ;
+; |CPU|OUTPUT[0]                       ; |CPU|OUTPUT[0]                       ; pin_out          ;
+; |CPU|OUTPUT_C[6]                     ; |CPU|OUTPUT_C[6]                     ; pin_out          ;
+; |CPU|OUTPUT_C[5]                     ; |CPU|OUTPUT_C[5]                     ; pin_out          ;
+; |CPU|OUTPUT_C[4]                     ; |CPU|OUTPUT_C[4]                     ; pin_out          ;
+; |CPU|OUTPUT_C[3]                     ; |CPU|OUTPUT_C[3]                     ; pin_out          ;
+; |CPU|OUTPUT_C[2]                     ; |CPU|OUTPUT_C[2]                     ; pin_out          ;
+; |CPU|OUTPUT_C[1]                     ; |CPU|OUTPUT_C[1]                     ; pin_out          ;
+; |CPU|OUTPUT_C[0]                     ; |CPU|OUTPUT_C[0]                     ; pin_out          ;
+; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[0] ; |CPU|MY_OUTPUT:inst15|OUTPUT_DATA[0] ; out              ;
+; |CPU|PC:inst9|ADD~4                  ; |CPU|PC:inst9|ADD~4                  ; out              ;
+; |CPU|PC:inst9|ADD~12                 ; |CPU|PC:inst9|ADD~12                 ; out              ;
+; |CPU|PC:inst9|ADD[3]                 ; |CPU|PC:inst9|ADD[3]                 ; regout           ;
+; |CPU|PC:inst9|ADD[4]                 ; |CPU|PC:inst9|ADD[4]                 ; regout           ;
+; |CPU|PC:inst9|ADD[7]                 ; |CPU|PC:inst9|ADD[7]                 ; regout           ;
+; |CPU|MUX_3:inst8|ADD[3]~14           ; |CPU|MUX_3:inst8|ADD[3]~14           ; out              ;
+; |CPU|MUX_3:inst8|ADD[3]              ; |CPU|MUX_3:inst8|ADD[3]              ; out              ;
+; |CPU|MUX_3:inst8|ADD[7]~24           ; |CPU|MUX_3:inst8|ADD[7]~24           ; out0             ;
+; |CPU|MY_INPUT:inst14|BUS_DATA[0]     ; |CPU|MY_INPUT:inst14|BUS_DATA[0]     ; out              ;
+; |CPU|MY_INPUT:inst14|BUS_DATA[5]     ; |CPU|MY_INPUT:inst14|BUS_DATA[5]     ; out              ;
+; |CPU|GR:inst4|A~1                    ; |CPU|GR:inst4|A~1                    ; out              ;
+; |CPU|GR:inst4|A~2                    ; |CPU|GR:inst4|A~2                    ; out              ;
+; |CPU|GR:inst4|A~4                    ; |CPU|GR:inst4|A~4                    ; out              ;
+; |CPU|GR:inst4|A~7                    ; |CPU|GR:inst4|A~7                    ; out              ;
+; |CPU|GR:inst4|IR_C[0]                ; |CPU|GR:inst4|IR_C[0]                ; regout           ;
+; |CPU|GR:inst4|IR_C[1]                ; |CPU|GR:inst4|IR_C[1]                ; regout           ;
+; |CPU|GR:inst4|IR_C[2]                ; |CPU|GR:inst4|IR_C[2]                ; regout           ;
+; |CPU|GR:inst4|IR_C[3]                ; |CPU|GR:inst4|IR_C[3]                ; regout           ;
+; |CPU|GR:inst4|IR_C[4]                ; |CPU|GR:inst4|IR_C[4]                ; regout           ;
+; |CPU|GR:inst4|IR_C[5]                ; |CPU|GR:inst4|IR_C[5]                ; regout           ;
+; |CPU|GR:inst4|IR_C[6]                ; |CPU|GR:inst4|IR_C[6]                ; regout           ;
+; |CPU|ALU:inst|ALU_TMP[8]             ; |CPU|ALU:inst|ALU_TMP[8]             ; out              ;
+; |CPU|ALU:inst|ALU_TMP[8]~47          ; |CPU|ALU:inst|ALU_TMP[8]~47          ; out              ;
+; |CPU|ALU:inst|ALU_TMP[8]~48          ; |CPU|ALU:inst|ALU_TMP[8]~48          ; out              ;
+; |CPU|ALU:inst|ALU_TMP[8]~49          ; |CPU|ALU:inst|ALU_TMP[8]~49          ; out              ;
+; |CPU|CONTROLLER:inst1|INPC~0         ; |CPU|CONTROLLER:inst1|INPC~0         ; out0             ;
+; |CPU|CONTROLLER:inst1|INPC~2         ; |CPU|CONTROLLER:inst1|INPC~2         ; out0             ;
+; |CPU|PC:inst9|Add0~5                 ; |CPU|PC:inst9|Add0~5                 ; out0             ;
+; |CPU|PC:inst9|Add0~6                 ; |CPU|PC:inst9|Add0~6                 ; out0             ;
+; |CPU|PC:inst9|Add0~7                 ; |CPU|PC:inst9|Add0~7                 ; out0             ;
+; |CPU|PC:inst9|Add0~9                 ; |CPU|PC:inst9|Add0~9                 ; out0             ;
+; |CPU|PC:inst9|Add0~11                ; |CPU|PC:inst9|Add0~11                ; out0             ;
+; |CPU|PC:inst9|Add0~12                ; |CPU|PC:inst9|Add0~12                ; out0             ;
+; |CPU|ALU:inst|Add0~4                 ; |CPU|ALU:inst|Add0~4                 ; out0             ;
+; |CPU|ALU:inst|Add0~6                 ; |CPU|ALU:inst|Add0~6                 ; out0             ;
++--------------------------------------+--------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                       ;
++------------------------------+------------------------------+------------------+
+; Node Name                    ; Output Port Name             ; Output Port Type ;
++------------------------------+------------------------------+------------------+
+; |CPU|INPUT[7]                ; |CPU|INPUT[7]                ; out              ;
+; |CPU|INPUT[6]                ; |CPU|INPUT[6]                ; out              ;
+; |CPU|INPUT[5]                ; |CPU|INPUT[5]                ; out              ;
+; |CPU|INPUT[3]                ; |CPU|INPUT[3]                ; out              ;
+; |CPU|INPUT[0]                ; |CPU|INPUT[0]                ; out              ;
+; |CPU|PC_ADD[7]               ; |CPU|PC_ADD[7]               ; pin_out          ;
+; |CPU|PC_ADD[6]               ; |CPU|PC_ADD[6]               ; pin_out          ;
+; |CPU|PC_ADD[4]               ; |CPU|PC_ADD[4]               ; pin_out          ;
+; |CPU|PC_ADD[3]               ; |CPU|PC_ADD[3]               ; pin_out          ;
+; |CPU|HEAL                    ; |CPU|HEAL                    ; pin_out          ;
+; |CPU|OUTPUT_B[4]             ; |CPU|OUTPUT_B[4]             ; pin_out          ;
+; |CPU|OUTPUT_B[2]             ; |CPU|OUTPUT_B[2]             ; pin_out          ;
+; |CPU|OUTPUT_B[1]             ; |CPU|OUTPUT_B[1]             ; pin_out          ;
+; |CPU|OUTPUT_C[7]             ; |CPU|OUTPUT_C[7]             ; pin_out          ;
+; |CPU|OUTPUT_C[6]             ; |CPU|OUTPUT_C[6]             ; pin_out          ;
+; |CPU|OUTPUT_C[5]             ; |CPU|OUTPUT_C[5]             ; pin_out          ;
+; |CPU|OUTPUT_C[4]             ; |CPU|OUTPUT_C[4]             ; pin_out          ;
+; |CPU|OUTPUT_C[3]             ; |CPU|OUTPUT_C[3]             ; pin_out          ;
+; |CPU|OUTPUT_C[2]             ; |CPU|OUTPUT_C[2]             ; pin_out          ;
+; |CPU|OUTPUT_C[1]             ; |CPU|OUTPUT_C[1]             ; pin_out          ;
+; |CPU|OUTPUT_C[0]             ; |CPU|OUTPUT_C[0]             ; pin_out          ;
+; |CPU|PC:inst9|ADD~4          ; |CPU|PC:inst9|ADD~4          ; out              ;
+; |CPU|PC:inst9|ADD~12         ; |CPU|PC:inst9|ADD~12         ; out              ;
+; |CPU|PC:inst9|ADD[3]         ; |CPU|PC:inst9|ADD[3]         ; regout           ;
+; |CPU|PC:inst9|ADD[4]         ; |CPU|PC:inst9|ADD[4]         ; regout           ;
+; |CPU|PC:inst9|ADD[6]         ; |CPU|PC:inst9|ADD[6]         ; regout           ;
+; |CPU|PC:inst9|ADD[7]         ; |CPU|PC:inst9|ADD[7]         ; regout           ;
+; |CPU|MUX_3:inst8|ADD[3]~14   ; |CPU|MUX_3:inst8|ADD[3]~14   ; out              ;
+; |CPU|MUX_3:inst8|ADD[3]      ; |CPU|MUX_3:inst8|ADD[3]      ; out              ;
+; |CPU|MUX_3:inst8|ADD[7]~24   ; |CPU|MUX_3:inst8|ADD[7]~24   ; out0             ;
+; |CPU|GR:inst4|A~1            ; |CPU|GR:inst4|A~1            ; out              ;
+; |CPU|GR:inst4|A~2            ; |CPU|GR:inst4|A~2            ; out              ;
+; |CPU|GR:inst4|A~4            ; |CPU|GR:inst4|A~4            ; out              ;
+; |CPU|GR:inst4|A~7            ; |CPU|GR:inst4|A~7            ; out              ;
+; |CPU|GR:inst4|IR_C[0]        ; |CPU|GR:inst4|IR_C[0]        ; regout           ;
+; |CPU|GR:inst4|IR_C[1]        ; |CPU|GR:inst4|IR_C[1]        ; regout           ;
+; |CPU|GR:inst4|IR_C[2]        ; |CPU|GR:inst4|IR_C[2]        ; regout           ;
+; |CPU|GR:inst4|IR_C[3]        ; |CPU|GR:inst4|IR_C[3]        ; regout           ;
+; |CPU|GR:inst4|IR_C[4]        ; |CPU|GR:inst4|IR_C[4]        ; regout           ;
+; |CPU|GR:inst4|IR_C[5]        ; |CPU|GR:inst4|IR_C[5]        ; regout           ;
+; |CPU|GR:inst4|IR_C[6]        ; |CPU|GR:inst4|IR_C[6]        ; regout           ;
+; |CPU|GR:inst4|IR_C[7]        ; |CPU|GR:inst4|IR_C[7]        ; regout           ;
+; |CPU|GR:inst4|IR_B[1]        ; |CPU|GR:inst4|IR_B[1]        ; regout           ;
+; |CPU|GR:inst4|IR_B[2]        ; |CPU|GR:inst4|IR_B[2]        ; regout           ;
+; |CPU|GR:inst4|IR_B[4]        ; |CPU|GR:inst4|IR_B[4]        ; regout           ;
+; |CPU|ALU:inst|ALU_TMP[8]~47  ; |CPU|ALU:inst|ALU_TMP[8]~47  ; out              ;
+; |CPU|ALU:inst|ALU_TMP[8]~48  ; |CPU|ALU:inst|ALU_TMP[8]~48  ; out              ;
+; |CPU|ALU:inst|ALU_TMP[8]~49  ; |CPU|ALU:inst|ALU_TMP[8]~49  ; out              ;
+; |CPU|ID:inst3|HEAL~0         ; |CPU|ID:inst3|HEAL~0         ; out0             ;
+; |CPU|ID:inst3|HEAL~1         ; |CPU|ID:inst3|HEAL~1         ; out0             ;
+; |CPU|ID:inst3|HEAL           ; |CPU|ID:inst3|HEAL           ; out0             ;
+; |CPU|CONTROLLER:inst1|INPC~0 ; |CPU|CONTROLLER:inst1|INPC~0 ; out0             ;
+; |CPU|CONTROLLER:inst1|INPC~2 ; |CPU|CONTROLLER:inst1|INPC~2 ; out0             ;
+; |CPU|PC:inst9|Add0~5         ; |CPU|PC:inst9|Add0~5         ; out0             ;
+; |CPU|PC:inst9|Add0~6         ; |CPU|PC:inst9|Add0~6         ; out0             ;
+; |CPU|PC:inst9|Add0~7         ; |CPU|PC:inst9|Add0~7         ; out0             ;
+; |CPU|PC:inst9|Add0~9         ; |CPU|PC:inst9|Add0~9         ; out0             ;
+; |CPU|PC:inst9|Add0~10        ; |CPU|PC:inst9|Add0~10        ; out0             ;
+; |CPU|PC:inst9|Add0~11        ; |CPU|PC:inst9|Add0~11        ; out0             ;
+; |CPU|PC:inst9|Add0~12        ; |CPU|PC:inst9|Add0~12        ; out0             ;
+; |CPU|ALU:inst|Add0~4         ; |CPU|ALU:inst|Add0~4         ; out0             ;
+; |CPU|ALU:inst|Add0~6         ; |CPU|ALU:inst|Add0~6         ; out0             ;
+; |CPU|ID:inst3|Equal16~0      ; |CPU|ID:inst3|Equal16~0      ; out0             ;
++------------------------------+------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Dec 31 15:23:04 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off CPU -c CPU
+Info: Using vector source file "D:/CODES/Quartus/experiment/CPU_FINAL/CPU.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      88.84 %
+Info: Number of transitions in simulation is 6681
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 179 megabytes
+    Info: Processing ended: Mon Dec 31 15:23:04 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

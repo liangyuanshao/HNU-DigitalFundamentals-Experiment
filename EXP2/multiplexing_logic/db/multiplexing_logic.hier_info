@@ -1,0 +1,8 @@
+|multiplexing_logic
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+s => inst.DATAIN
+s => inst5.IN0
+enable => inst.OE
+enable1 => inst4.OE
+
+

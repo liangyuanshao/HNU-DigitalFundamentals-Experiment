@@ -1,0 +1,8 @@
+|my_xor_logic
+pin_name6 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+pin_name => inst1.IN0
+pin_name => inst2.IN0
+pin_name5 => inst3.IN0
+pin_name5 => inst.IN1
+
+

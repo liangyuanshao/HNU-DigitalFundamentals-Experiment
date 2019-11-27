@@ -1,0 +1,19 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x10dc0040:
+	0x023f791b: tcl84 + 0x4791b (_Tcl_LoadObjCmd + 0x65b)
+	0x00951c37: ccl_atcl + 0x1c37 (?atcl_is_dynamically_loading@@YI_NXZ + 0x127)
+	0x0019e5bf:
+	</callstack>
+	<error>Current editor: WED, RPW, STED, RPW, GED</error>
+	<date>Thu Dec 27 18:59:19 2018</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Access Violation at 0X10DC0040
+Current editor: WED, RPW, STED, RPW, GED
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+

@@ -1,0 +1,65 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+7
+3331
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+full_adder_logic
+# storage
+db|ripple_carry_adder_logic.(1).cnf
+db|ripple_carry_adder_logic.(1).cnf
+# case_insensitive
+# source_file
+full_adder_logic.bdf
+6bf62963480fc192a41f8e85fa469
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+full_adder_logic:inst
+full_adder_logic:inst2
+full_adder_logic:inst3
+full_adder_logic:inst4
+}
+# macro_sequence
+
+# end
+# entity
+ripple_carry_adder_logic
+# storage
+db|ripple_carry_adder_logic.(0).cnf
+db|ripple_carry_adder_logic.(0).cnf
+# case_insensitive
+# source_file
+ripple_carry_adder_logic.bdf
+e4116a41ea9fe77ce87046a9fec8a0b7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,354 @@
+Simulator report for GR
+Thu Dec 27 18:29:59 2018
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 141 nodes    ;
+; Simulation Coverage         ;      74.47 % ;
+; Total Number of Transitions ; 1706         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      74.47 % ;
+; Total nodes checked                                 ; 141          ;
+; Total output ports checked                          ; 141          ;
+; Total output ports with complete 1/0-value coverage ; 105          ;
+; Total output ports with no 1/0-value coverage       ; 23           ;
+; Total output ports with no 1-value coverage         ; 23           ;
+; Total output ports with no 0-value coverage         ; 36           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------+
+; Complete 1/0-Value Coverage                           ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |GR|A~2         ; |GR|A~2          ; out              ;
+; |GR|A~3         ; |GR|A~3          ; out              ;
+; |GR|A~4         ; |GR|A~4          ; out              ;
+; |GR|A~5         ; |GR|A~5          ; out              ;
+; |GR|A~6         ; |GR|A~6          ; out              ;
+; |GR|A~7         ; |GR|A~7          ; out              ;
+; |GR|A~10        ; |GR|A~10         ; out              ;
+; |GR|A~11        ; |GR|A~11         ; out              ;
+; |GR|A~12        ; |GR|A~12         ; out              ;
+; |GR|A~13        ; |GR|A~13         ; out              ;
+; |GR|A~14        ; |GR|A~14         ; out              ;
+; |GR|A~15        ; |GR|A~15         ; out              ;
+; |GR|B~2         ; |GR|B~2          ; out              ;
+; |GR|B~3         ; |GR|B~3          ; out              ;
+; |GR|B~4         ; |GR|B~4          ; out              ;
+; |GR|B~5         ; |GR|B~5          ; out              ;
+; |GR|B~6         ; |GR|B~6          ; out              ;
+; |GR|B~7         ; |GR|B~7          ; out              ;
+; |GR|B~10        ; |GR|B~10         ; out              ;
+; |GR|B~11        ; |GR|B~11         ; out              ;
+; |GR|B~12        ; |GR|B~12         ; out              ;
+; |GR|B~13        ; |GR|B~13         ; out              ;
+; |GR|B~14        ; |GR|B~14         ; out              ;
+; |GR|B~15        ; |GR|B~15         ; out              ;
+; |GR|process_0~0 ; |GR|process_0~0  ; out0             ;
+; |GR|IR_A~0      ; |GR|IR_A~0       ; out              ;
+; |GR|IR_A~1      ; |GR|IR_A~1       ; out              ;
+; |GR|IR_A~2      ; |GR|IR_A~2       ; out              ;
+; |GR|IR_A~3      ; |GR|IR_A~3       ; out              ;
+; |GR|IR_A~4      ; |GR|IR_A~4       ; out              ;
+; |GR|IR_A~5      ; |GR|IR_A~5       ; out              ;
+; |GR|IR_A~6      ; |GR|IR_A~6       ; out              ;
+; |GR|IR_A~7      ; |GR|IR_A~7       ; out              ;
+; |GR|IR_B~0      ; |GR|IR_B~0       ; out              ;
+; |GR|IR_B~1      ; |GR|IR_B~1       ; out              ;
+; |GR|IR_B~2      ; |GR|IR_B~2       ; out              ;
+; |GR|IR_B~3      ; |GR|IR_B~3       ; out              ;
+; |GR|IR_B~4      ; |GR|IR_B~4       ; out              ;
+; |GR|IR_B~5      ; |GR|IR_B~5       ; out              ;
+; |GR|IR_B~6      ; |GR|IR_B~6       ; out              ;
+; |GR|IR_B~7      ; |GR|IR_B~7       ; out              ;
+; |GR|IR_B~8      ; |GR|IR_B~8       ; out              ;
+; |GR|IR_B~9      ; |GR|IR_B~9       ; out              ;
+; |GR|IR_B~10     ; |GR|IR_B~10      ; out              ;
+; |GR|IR_B~11     ; |GR|IR_B~11      ; out              ;
+; |GR|IR_B~12     ; |GR|IR_B~12      ; out              ;
+; |GR|IR_B~13     ; |GR|IR_B~13      ; out              ;
+; |GR|IR_B~14     ; |GR|IR_B~14      ; out              ;
+; |GR|IR_B~15     ; |GR|IR_B~15      ; out              ;
+; |GR|IR_C~0      ; |GR|IR_C~0       ; out              ;
+; |GR|IR_C~1      ; |GR|IR_C~1       ; out              ;
+; |GR|IR_C~2      ; |GR|IR_C~2       ; out              ;
+; |GR|IR_C~3      ; |GR|IR_C~3       ; out              ;
+; |GR|IR_C~4      ; |GR|IR_C~4       ; out              ;
+; |GR|IR_C~5      ; |GR|IR_C~5       ; out              ;
+; |GR|IR_C~6      ; |GR|IR_C~6       ; out              ;
+; |GR|IR_C~7      ; |GR|IR_C~7       ; out              ;
+; |GR|IR_C~8      ; |GR|IR_C~8       ; out              ;
+; |GR|IR_C~9      ; |GR|IR_C~9       ; out              ;
+; |GR|IR_C~10     ; |GR|IR_C~10      ; out              ;
+; |GR|IR_C~11     ; |GR|IR_C~11      ; out              ;
+; |GR|IR_C~12     ; |GR|IR_C~12      ; out              ;
+; |GR|IR_C~13     ; |GR|IR_C~13      ; out              ;
+; |GR|IR_C~14     ; |GR|IR_C~14      ; out              ;
+; |GR|IR_C~15     ; |GR|IR_C~15      ; out              ;
+; |GR|IR_C~16     ; |GR|IR_C~16      ; out              ;
+; |GR|IR_C~17     ; |GR|IR_C~17      ; out              ;
+; |GR|IR_C~18     ; |GR|IR_C~18      ; out              ;
+; |GR|IR_C~19     ; |GR|IR_C~19      ; out              ;
+; |GR|IR_C~20     ; |GR|IR_C~20      ; out              ;
+; |GR|IR_C~21     ; |GR|IR_C~21      ; out              ;
+; |GR|IR_C~22     ; |GR|IR_C~22      ; out              ;
+; |GR|IR_C~23     ; |GR|IR_C~23      ; out              ;
+; |GR|IR_C[1]     ; |GR|IR_C[1]      ; regout           ;
+; |GR|IR_C[2]     ; |GR|IR_C[2]      ; regout           ;
+; |GR|CLK         ; |GR|CLK          ; out              ;
+; |GR|RWBA[0]     ; |GR|RWBA[0]      ; out              ;
+; |GR|RWBA[1]     ; |GR|RWBA[1]      ; out              ;
+; |GR|RAA[0]      ; |GR|RAA[0]       ; out              ;
+; |GR|RAA[1]      ; |GR|RAA[1]       ; out              ;
+; |GR|BUS_DATA[0] ; |GR|BUS_DATA[0]  ; out              ;
+; |GR|BUS_DATA[1] ; |GR|BUS_DATA[1]  ; out              ;
+; |GR|BUS_DATA[2] ; |GR|BUS_DATA[2]  ; out              ;
+; |GR|BUS_DATA[3] ; |GR|BUS_DATA[3]  ; out              ;
+; |GR|BUS_DATA[4] ; |GR|BUS_DATA[4]  ; out              ;
+; |GR|BUS_DATA[5] ; |GR|BUS_DATA[5]  ; out              ;
+; |GR|BUS_DATA[6] ; |GR|BUS_DATA[6]  ; out              ;
+; |GR|BUS_DATA[7] ; |GR|BUS_DATA[7]  ; out              ;
+; |GR|A[0]        ; |GR|A[0]         ; pin_out          ;
+; |GR|A[1]        ; |GR|A[1]         ; pin_out          ;
+; |GR|A[2]        ; |GR|A[2]         ; pin_out          ;
+; |GR|A[3]        ; |GR|A[3]         ; pin_out          ;
+; |GR|A[4]        ; |GR|A[4]         ; pin_out          ;
+; |GR|A[5]        ; |GR|A[5]         ; pin_out          ;
+; |GR|B[0]        ; |GR|B[0]         ; pin_out          ;
+; |GR|B[1]        ; |GR|B[1]         ; pin_out          ;
+; |GR|B[2]        ; |GR|B[2]         ; pin_out          ;
+; |GR|B[3]        ; |GR|B[3]         ; pin_out          ;
+; |GR|B[4]        ; |GR|B[4]         ; pin_out          ;
+; |GR|B[5]        ; |GR|B[5]         ; pin_out          ;
+; |GR|Equal0~0    ; |GR|Equal0~0     ; out0             ;
+; |GR|Equal1~0    ; |GR|Equal1~0     ; out0             ;
+; |GR|Equal2~0    ; |GR|Equal2~0     ; out0             ;
+; |GR|Equal3~0    ; |GR|Equal3~0     ; out0             ;
+; |GR|Equal4~0    ; |GR|Equal4~0     ; out0             ;
++-----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------+
+; Missing 1-Value Coverage                           ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |GR|A~0      ; |GR|A~0          ; out              ;
+; |GR|A~1      ; |GR|A~1          ; out              ;
+; |GR|A~8      ; |GR|A~8          ; out              ;
+; |GR|A~9      ; |GR|A~9          ; out              ;
+; |GR|B~0      ; |GR|B~0          ; out              ;
+; |GR|B~1      ; |GR|B~1          ; out              ;
+; |GR|B~8      ; |GR|B~8          ; out              ;
+; |GR|B~9      ; |GR|B~9          ; out              ;
+; |GR|IR_C[6]  ; |GR|IR_C[6]      ; regout           ;
+; |GR|IR_C[7]  ; |GR|IR_C[7]      ; regout           ;
+; |GR|IR_B[1]  ; |GR|IR_B[1]      ; regout           ;
+; |GR|IR_B[3]  ; |GR|IR_B[3]      ; regout           ;
+; |GR|IR_B[6]  ; |GR|IR_B[6]      ; regout           ;
+; |GR|IR_B[7]  ; |GR|IR_B[7]      ; regout           ;
+; |GR|IR_A[2]  ; |GR|IR_A[2]      ; regout           ;
+; |GR|IR_A[3]  ; |GR|IR_A[3]      ; regout           ;
+; |GR|IR_A[6]  ; |GR|IR_A[6]      ; regout           ;
+; |GR|IR_A[7]  ; |GR|IR_A[7]      ; regout           ;
+; |GR|A[6]     ; |GR|A[6]         ; pin_out          ;
+; |GR|A[7]     ; |GR|A[7]         ; pin_out          ;
+; |GR|B[6]     ; |GR|B[6]         ; pin_out          ;
+; |GR|B[7]     ; |GR|B[7]         ; pin_out          ;
+; |GR|Equal5~0 ; |GR|Equal5~0     ; out0             ;
++--------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------+
+; Missing 0-Value Coverage                           ;
++--------------+------------------+------------------+
+; Node Name    ; Output Port Name ; Output Port Type ;
++--------------+------------------+------------------+
+; |GR|A~0      ; |GR|A~0          ; out              ;
+; |GR|A~1      ; |GR|A~1          ; out              ;
+; |GR|A~8      ; |GR|A~8          ; out              ;
+; |GR|A~9      ; |GR|A~9          ; out              ;
+; |GR|B~0      ; |GR|B~0          ; out              ;
+; |GR|B~1      ; |GR|B~1          ; out              ;
+; |GR|B~8      ; |GR|B~8          ; out              ;
+; |GR|B~9      ; |GR|B~9          ; out              ;
+; |GR|IR_C[0]  ; |GR|IR_C[0]      ; regout           ;
+; |GR|IR_C[3]  ; |GR|IR_C[3]      ; regout           ;
+; |GR|IR_C[4]  ; |GR|IR_C[4]      ; regout           ;
+; |GR|IR_C[5]  ; |GR|IR_C[5]      ; regout           ;
+; |GR|IR_C[6]  ; |GR|IR_C[6]      ; regout           ;
+; |GR|IR_C[7]  ; |GR|IR_C[7]      ; regout           ;
+; |GR|IR_B[0]  ; |GR|IR_B[0]      ; regout           ;
+; |GR|IR_B[1]  ; |GR|IR_B[1]      ; regout           ;
+; |GR|IR_B[2]  ; |GR|IR_B[2]      ; regout           ;
+; |GR|IR_B[3]  ; |GR|IR_B[3]      ; regout           ;
+; |GR|IR_B[4]  ; |GR|IR_B[4]      ; regout           ;
+; |GR|IR_B[5]  ; |GR|IR_B[5]      ; regout           ;
+; |GR|IR_B[6]  ; |GR|IR_B[6]      ; regout           ;
+; |GR|IR_B[7]  ; |GR|IR_B[7]      ; regout           ;
+; |GR|IR_A[0]  ; |GR|IR_A[0]      ; regout           ;
+; |GR|IR_A[1]  ; |GR|IR_A[1]      ; regout           ;
+; |GR|IR_A[2]  ; |GR|IR_A[2]      ; regout           ;
+; |GR|IR_A[3]  ; |GR|IR_A[3]      ; regout           ;
+; |GR|IR_A[4]  ; |GR|IR_A[4]      ; regout           ;
+; |GR|IR_A[5]  ; |GR|IR_A[5]      ; regout           ;
+; |GR|IR_A[6]  ; |GR|IR_A[6]      ; regout           ;
+; |GR|IR_A[7]  ; |GR|IR_A[7]      ; regout           ;
+; |GR|WE_GR    ; |GR|WE_GR        ; out              ;
+; |GR|A[6]     ; |GR|A[6]         ; pin_out          ;
+; |GR|A[7]     ; |GR|A[7]         ; pin_out          ;
+; |GR|B[6]     ; |GR|B[6]         ; pin_out          ;
+; |GR|B[7]     ; |GR|B[7]         ; pin_out          ;
+; |GR|Equal5~0 ; |GR|Equal5~0     ; out0             ;
++--------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Dec 27 18:29:59 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off GR -c GR
+Info: Using vector source file "D:/CODES/Quartus/experiment/CPU_COMPONENT/GR/GR.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "OUTPUT[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "OUTPUT[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "OUTPUT[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "OUTPUT[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "OUTPUT[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "OUTPUT[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "OUTPUT[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "OUTPUT[0]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 20.0 ns on register "|GR|IR_A[0]"
+Warning: Found clock-sensitive change during active clock edge at time 40.0 ns on register "|GR|IR_B[0]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|GR|IR_C[0]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|GR|IR_C[1]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|GR|IR_C[2]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|GR|IR_C[4]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|GR|IR_C[5]"
+Warning: Found clock-sensitive change during active clock edge at time 60.0 ns on register "|GR|IR_B[1]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_B[2]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_B[3]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_B[4]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_B[5]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_A[1]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_A[2]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_A[3]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_A[4]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_A[5]"
+Warning: Found clock-sensitive change during active clock edge at time 120.0 ns on register "|GR|IR_A[7]"
+Warning: Found clock-sensitive change during active clock edge at time 140.0 ns on register "|GR|IR_B[7]"
+Warning: Found clock-sensitive change during active clock edge at time 180.0 ns on register "|GR|IR_C[6]"
+Warning: Found clock-sensitive change during active clock edge at time 180.0 ns on register "|GR|IR_C[7]"
+Warning: Found clock-sensitive change during active clock edge at time 200.0 ns on register "|GR|IR_A[6]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      74.47 %
+Info: Number of transitions in simulation is 1706
+Info: Quartus II Simulator was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 178 megabytes
+    Info: Processing ended: Thu Dec 27 18:29:59 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

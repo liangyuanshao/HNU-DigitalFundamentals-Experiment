@@ -1,0 +1,304 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+7
+3331
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+decoder_2_3
+# storage
+db|IRS.(1).cnf
+db|IRS.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decoder_2_3.vhd
+64f8c4cbf15213d2ac2a31fb92c04cd1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(y)
+2 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+decoder_2_3:dec0
+decoder_2_3:dec1
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+three_state_gate
+# storage
+db|IRS.(3).cnf
+db|IRS.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+three_state_gate.vhd
+1b665d13f42a8412e4c5748d0bf4d3e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(in0)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(out0)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mux_3:mux0|three_state_gate:g0
+mux_3:mux0|three_state_gate:g1
+mux_3:mux0|three_state_gate:g2
+mux_3:mux1|three_state_gate:g0
+mux_3:mux1|three_state_gate:g1
+mux_3:mux1|three_state_gate:g2
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+IRS
+# storage
+db|IRS.(0).cnf
+db|IRS.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+IRS.vhd
+bedb679f9dc2a326a3c3851b462f356
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+mux_3
+# storage
+db|IRS.(2).cnf
+db|IRS.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_3.vhd
+83a4ef7a68146ad16ddc9433b8ae6a9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(s0)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(s1)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(s2)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(en)
+2 downto 0
+PARAMETER_STRING
+USR
+ constraint(y)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+mux_3:mux0
+mux_3:mux1
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+mydff
+# storage
+db|IRS.(5).cnf
+db|IRS.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mydff.vhd
+62362ccbb7563588c1c6569c517ad46
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+IR:reg0|mydff:\ge:7:gi
+IR:reg0|mydff:\ge:6:gi
+IR:reg0|mydff:\ge:5:gi
+IR:reg0|mydff:\ge:4:gi
+IR:reg0|mydff:\ge:3:gi
+IR:reg0|mydff:\ge:2:gi
+IR:reg0|mydff:\ge:1:gi
+IR:reg0|mydff:\ge:0:gi
+IR:reg1|mydff:\ge:7:gi
+IR:reg1|mydff:\ge:6:gi
+IR:reg1|mydff:\ge:5:gi
+IR:reg1|mydff:\ge:4:gi
+IR:reg1|mydff:\ge:3:gi
+IR:reg1|mydff:\ge:2:gi
+IR:reg1|mydff:\ge:1:gi
+IR:reg1|mydff:\ge:0:gi
+IR:reg2|mydff:\ge:7:gi
+IR:reg2|mydff:\ge:6:gi
+IR:reg2|mydff:\ge:5:gi
+IR:reg2|mydff:\ge:4:gi
+IR:reg2|mydff:\ge:3:gi
+IR:reg2|mydff:\ge:2:gi
+IR:reg2|mydff:\ge:1:gi
+IR:reg2|mydff:\ge:0:gi
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+IR
+# storage
+db|IRS.(4).cnf
+db|IRS.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+IR.vhd
+1654eb1b65ffbaf567715eeabb336df
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(x)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+IR:reg0
+IR:reg1
+IR:reg2
+}
+# lmf
+c:|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

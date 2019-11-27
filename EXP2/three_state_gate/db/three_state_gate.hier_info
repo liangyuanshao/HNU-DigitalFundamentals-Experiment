@@ -1,0 +1,6 @@
+|three_state_gate
+en => out1~0.OE
+in1 => out1~0.DATAIN
+out1 <= out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
